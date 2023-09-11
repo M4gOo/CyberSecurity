@@ -1,1 +1,27 @@
-dfgd
+
+What is the job like
+- Ensures cyber security risk is minimized at all times.
+- Identifies weak points, and prepares mitigations
+- Develops and implements secure network solutions.
+- Collaborates and coordinates with other teams to establish security protocols across the organization.
+- A security engineer helps the organization create security policies based on established Security Principles. 
+- Ensures the organization's Windows, Linux, and Active Directory are hardened, and software development follows the Secure Software Development Lifecycle.
+-  Secure by design - ensure that this asset inventory is regularly maintained and updated and includes all the required information about assets such as asset name, type, IP addresses,
+physical location, place in the network, applications running on an asset, access permissions (only within the organization or public-facing), and the asset owner details.
+-  it is a journey towards continuous improvement
+
+Security is essential to businesses because ignoring it can result in operational disruptions, data leakage, lawsuits, or other forms of risk.
+eliminating all risks might not be possible when running business operations. Sometimes, a decision has to be made to accept a risk and move on. 
+In such a scenario, the security engineer might perform some mitigating actions to lower the risk.
+Deploying the software without testing on the latest OS version will risk causing problems in the organization's operations. In such a scenario, the vulnerable OS version poses a security risk. 
+A security engineer might suggest mitigating the risk by hardening the OS through additional controls and adding a reverse proxy in front of the vulnerable system to avoid exposing it to the internet. 
+
+A security engineer works closely with both internal and external auditors to detect any non-compliance issues and effectively address them (PCI-DSS, HIPAA, SOC2, ISO27001, NIST-800-53, and more.)
+Additionally, they are responsible for upholding the organization's security certifications as needed.
+
+A security engineer might sometimes be required to configure or fine-tune security tools such as SIEMs, Firewalls, WAFs, EDRs, and more.
+
+Tabletop exercises are often conducted to gauge the operational readiness of an organization from a security point of view. Certain scenarios are identified to be exercised, 
+and security team members must explain their respective roles in the scenarios under discussion.  For example, a scenario might include the compromise of an endpoint device through a phishing email. 
+
+
