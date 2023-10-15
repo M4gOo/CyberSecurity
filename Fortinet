@@ -22,4 +22,17 @@ Authorization - process of controlling access to resources. Privileges to access
 Accounting - tracks information of agent activities on computer devices and networks (time looged in, data sent and received, their IP). Usually is used for audit, analyze user trends, billing.
 
 
+Threat landscape - include all known and possible threats to computer networks. This can help to identify weaknesses in the environment.
+
+Threat intelligence must be relevant, actionable and contextual. Depends on the company what is intellgence they classified.
+
+Understand the attack framework enables you to anticipate your nenmy's actions and counter them.
+
+Bad actors:
+explorer - 
+phishing, usually reputable source (microsoft, amazon, ...) and require immediate attention
+spear phishing social engineering attack targeting a specific individual or group
+smishing use SMS
+vishing VoIP, falsifies their caller-ID to appear as from a legitimate or trustworthy source (bank, charity shop, etc).
+
 
