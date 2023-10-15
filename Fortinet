@@ -29,10 +29,24 @@ Threat intelligence must be relevant, actionable and contextual. Depends on the 
 Understand the attack framework enables you to anticipate your nenmy's actions and counter them.
 
 Bad actors:
-explorer - 
+-> explorer - 
 phishing, usually reputable source (microsoft, amazon, ...) and require immediate attention
 spear phishing social engineering attack targeting a specific individual or group
 smishing use SMS
 vishing VoIP, falsifies their caller-ID to appear as from a legitimate or trustworthy source (bank, charity shop, etc).
+
+-> Hacktivist -
+usually as group against corp, government
+botnet - command and control server C&C -> DDoS
+
+->cyberterrorist
+usually targets infrastructure
+spear phising
+
+->cybercriminal
+they only wants money
+phising
+ransomware - block access computer until get paid
+
 
 
