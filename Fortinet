@@ -46,7 +46,21 @@ spear phising
 ->cybercriminal
 they only wants money
 phising
-ransomware - block access computer until get paid
+ransomware - block access computer until get paid, encrypts the data
+
+->cyberwarrior
+unpatched vuln OS and apps. zero day exploit
+national interest, national resources
+
+
+cybersecurity threat is an action exploiting a vuln that cause harm to a device and/or network
+->social engineering
+->malware
+->unauthorized access
+->system design failure
+
+birthday attack - exploits a weakness in some hashing algorithms, which is used to protect passwords
+the weakness is that multiple input values produce the same output value
 
 
 
