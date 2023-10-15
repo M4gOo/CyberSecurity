@@ -3,9 +3,23 @@ cybersecurity - methods, techonology and process to protect devices, systems, ne
 Correct actions and behaviors of people helps to keep the computer system safe.
 It is very important to have a disaster and plan for recovery. Also as the first line defese educate humans.
 
-protections means - confidentiality, integraty and availability.
+Principle of Information Security  - confidentiality, integraty and availability.
+confidentiality: data is kept confidential and private. People not authorized wont see the data. Avoid disclosure
+integraty: make sure the data is authentic, accurate, reliable and free tampering. Data is not changed. Avoid alteration
+availability: data is available to those who need it. Avoid Denial
+Firewall helps avoiding those issues denial, disclosure and alteration
+
 
 cybersecurity professionals looks for gaps or misconfigurations that can create vulnerabilities
 
 Information protected require control and protection. Protection information system against unauthorized access, modification, destruction or DoS to authorized user.
+
+
+authentication, authorization and accounting (AAA) - framework that controls resources, enforces policies and audit usage.
+this helps screening users and keeping track of their activities while they are connected
+Authentication - process of identifying and verifying a person or thing.
+Authorization - process of controlling access to resources. Privileges to access certain areas
+Accounting - tracks information of agent activities on computer devices and networks (time looged in, data sent and received, their IP). Usually is used for audit, analyze user trends, billing.
+
+
 
