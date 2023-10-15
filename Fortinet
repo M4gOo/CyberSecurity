@@ -3,7 +3,7 @@ cybersecurity - methods, techonology and process to protect devices, systems, ne
 Correct actions and behaviors of people helps to keep the computer system safe.
 It is very important to have a disaster and plan for recovery. Also as the first line defese educate humans.
 
-Principle of Information Security  - confidentiality, integraty and availability.
+InfoSec - Principle of Information Security - CIA triad - - confidentiality, integraty and availability.
 confidentiality: data is kept confidential and private. People not authorized wont see the data. Avoid disclosure
 integraty: make sure the data is authentic, accurate, reliable and free tampering. Data is not changed. Avoid alteration
 availability: data is available to those who need it. Avoid Denial
