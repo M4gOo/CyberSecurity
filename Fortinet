@@ -1,4 +1,4 @@
-
+  
 cybersecurity - methods, techonology and process to protect devices, systems, networks, data from damage, loss or/and unauthorized access. 
 Correct actions and behaviors of people helps to keep the computer system safe.
 It is very important to have a disaster and plan for recovery. Also as the first line defese educate humans.
@@ -61,6 +61,28 @@ cybersecurity threat is an action exploiting a vuln that cause harm to a device 
 
 birthday attack - exploits a weakness in some hashing algorithms, which is used to protect passwords
 the weakness is that multiple input values produce the same output value
+
+
+CVSS - Common Vulnerability Scoring System
+it is used to assess computer system vulnerabilities. The score 0-10, 10 being the most severe
+nvd.nist.gov
+
+Threat Intelligence is evidence-based information about cyber attacks that cyber security experts organize and analyze. 
+This information may include: Mechanisms of an attack. How to identify that an attack is happening.
+
+Open-Source Intelligence (OSINT) is defined as intelligence produced by collecting, evaluating and analyzing publicly available 
+information with the purpose of answering a specific intelligence question.
+
+
+MITRE ATT&CK is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
+mitre provides a common language and framework for discussing and analyzing cyber threats
+STIX (Structured Threat Information eXpression) is a standardized XML programming language for conveying data about cybersecurity
+threats in a common language that can be easily understood by humans and security technologies
+TAXII, short for Trusted Automated eXchange of Intelligence Information, defines how cyber threat information can be shared via 
+services and message exchanges. This is an app protocol for exchanging cyber threat intelligence CTI over HTTPS
+
+Cyber Kill Chain and MitrAttck are cyberattack framework, analyze cyberattacks
+
 
 
 
