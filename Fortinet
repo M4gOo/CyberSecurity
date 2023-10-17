@@ -94,6 +94,25 @@ attack vector has 3 components: vulnerability, mechanism and pathway
 
 
 
+cypher - AES, I did on orkut with Ricardo
+
+digital key can be used for digital signature, encryption
+public keys are often used to encrypt small pieces of data (hash data or another key)
+The  type or size of the key used is determined by the type of cryptographic
+the lengh and complexity are factors to determine how strong is the key
+Larger keys are used for small piece of data (digital signatures, key transfers)
+
+key or password + 128-bit salt value -> use a BCRYPT hash function generates -> enhanced key/password 
+
+
+
+
+
+
+
+
+
+
 
 
 
