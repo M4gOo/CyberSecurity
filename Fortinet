@@ -104,6 +104,13 @@ Larger keys are used for small piece of data (digital signatures, key transfers)
 
 key or password + 128-bit salt value -> use a BCRYPT hash function generates -> enhanced key/password 
 
+symmetric algorithm
+is acipher used to encrypt/decrypt data using the same key
+DES,3DES,AES,blowfish,RC4,RC5 and RC6
+
+asymmetric
+Diffie-Hellman, RSA, ECC, PGP, GPG, DSA
+not advantage to encrypt large amount of data, it is slow.
 
 
 
