@@ -63,6 +63,8 @@ birthday attack - exploits a weakness in some hashing algorithms, which is used 
 the weakness is that multiple input values produce the same output value
 
 
+cryptography - wirting and solve codes
+
 CVSS - Common Vulnerability Scoring System
 it is used to assess computer system vulnerabilities. The score 0-10, 10 being the most severe
 nvd.nist.gov
@@ -138,6 +140,10 @@ digital Certificate is an electronic document issued and signed by a trusted ent
 certificate standard is X.509 version3
 
 
+SECURE PERIMETER
+Stateless - where each packet is checked based on its 5-tuple(IP addr, source and destination ports, and protocols).
+Stateful  - security device keeps track of the 5-tuple check and the TCP/IP connection state, the return traffic is 
+validated only if it matches corresponding incoming traffic
 
 
 
