@@ -113,11 +113,29 @@ Diffie-Hellman, RSA, ECC, PGP, GPG, DSA
 not advantage to encrypt large amount of data, it is slow.
 
 
+hashing
+is the process of converting data of an arbittrary size to a unique value fixed size.
+output value is unique for every input value, if you change a "," in the word or file the output hash it will be
+totally different
+cannot reproduce the input value by using the output value
+SHA-512, MD5, NTLM
+
+digital signature - hashing + asymmetric cryptography.
+digital signature ensure data integrity, authentication of the signer
+the digital signature has a input value then is hashed using hash function, then is encryp by asym key and last digital 
+signature is attached to the information
+
+common attacks against hashing is bruteforce, they try to produce the same value as the hashing output value
+birthday paradox to find a collision in a hash function
+TO defend use key stretching - add a salt value to combine the hash and increase the size hash output length
 
 
+Public key infrastructure (PKI) is the set of hardware, software, policies, processes, and procedures required to create, 
+manage, distribute, use, store, and revoke digital certificates and public-keys
+4 entities - CA, RA Directory Server and End Entity
 
-
-
+digital Certificate is an electronic document issued and signed by a trusted entity like CA
+certificate standard is X.509 version3
 
 
 
