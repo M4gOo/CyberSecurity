@@ -1,0 +1,42 @@
+
+Cybersecurity protects your digital information, devices and assets, such as your bank accounts, files, or even photos. System protection is equally important. 
+It is a feature that creates restore points that allow you to set your devices to a previously healthier state before changes may have led to malfunctions or data loss. It is your backup plan.
+
+
+
+----------- THREAT LANDSCAPE  
+
+The threat landscape evaluation of every possible and identified threat affecting a particular sector, group of users, time period, and so forth.
+
+Threat landscape analysis makes it possible to see potential information security problems facing a specific entity — a company, an individual, or a whole sector — and to take preventive measures by adopting a proactive approach to information security. 
+This can help to identify weaknesses in the environment.
+
+The first step toward implementing effective safeguards is to better understand the types of threats that are out there. 
+
+
+----------COMMON ATTACKS
+
+TROJAN
+
+Although Trojans behave differently depending on the type, a feature of this common approach is that a user inadvertently introduces malicious code into the organization and triggers it from behind defensive walls. 
+The best defense against Trojan attacks is to practice vigilant Internet use. 
+Some guidelines are: never click on an unsolicited email with unexpected attachments
+always examine domain names and links before clicking on them
+Pay particular attention to spelling errors, such as zeros that have been replaced by O's
+
+
+RANSOMWARE
+
+designed to cause disruption of services. targeting vital infrastructure and services.
+Protect against ransomware
+Use strong passwords. A strong password is one that is difficult to guess and typically includes a combination of characters, numbers, and symbols.
+Keep your system updated with the latest security patches.
+Make sure that only people authorized for a system can use it.
+
+
+BOTNET
+
+They are a means of creating a denial of service for an organization. If a Trojan attack is a subtle attempt to bypass an application's defenses, a bot attack can be described as an all-out climbing of the walls
+These requests can come from any Internet of Things (IoT) capable device that has an IP address.
+A defensive approach to mitigating these types of attacks is to monitor network traffic for suspicious activity. If a particular source is identified as making repeated calls that affect a system's operations, that address may be blocked.
+
