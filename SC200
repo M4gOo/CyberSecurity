@@ -14,7 +14,8 @@ This can help to identify weaknesses in the environment.
 The first step toward implementing effective safeguards is to better understand the types of threats that are out there. 
 
 
-----------COMMON ATTACKS
+----------COMMON ATTACKS   https://www.microsoft.com/en-us/security/business/security-101/what-is-a-cyberattack
+https://www.microsoft.com/en-us/microsoft-365-life-hacks/writing/how-to-choose-strong-password
 
 TROJAN
 
@@ -39,4 +40,76 @@ BOTNET
 They are a means of creating a denial of service for an organization. If a Trojan attack is a subtle attempt to bypass an application's defenses, a bot attack can be described as an all-out climbing of the walls
 These requests can come from any Internet of Things (IoT) capable device that has an IP address.
 A defensive approach to mitigating these types of attacks is to monitor network traffic for suspicious activity. If a particular source is identified as making repeated calls that affect a system's operations, that address may be blocked.
+
+
+---------------- OS
+
+The operating system is the software component that interacts with the hardware and software programs to provide users with a standard computer experience. 
+three broad categories, which are controlling hardware access, providing a user interface, and managing files and applications.
+When interacting with the hardware of a computer, the operating system will communicate instructions through a device driver. These are essentially small pieces of code written by a device manufacturer, 
+which allow messages and instructions to be passed between the hardware and other software to control the device.
+An application will typically have an application programming interface, more commonly known as an API, which determines a set of rules for interacting with the program. 
+
+
+
+------------------ relationship between system fail-safe protection, and server storage and backups
+
+it is good practice to keep duplicates of your information by creating backups that run periodically.
+
+Database servers
+assessing storage needs and requirements.
+One is durability, good questions to ask when assessing durability is, will it last and what is an acceptable period of time to measure durability?
+Another is scalability, does it fit the data needs of the business or does your storage solution adjust accordingly as the business need grows? 
+Next, availability concerns how readily available the data is and when it is needed. 
+Lastly, consider security, how safe is your data? 
+
+a business can address the problem in two ways. 
+The first option is to physically acquire more storage through what is known as direct area storage or DAS. DAS involves additional secondary storage devices that physically connect to the machine accessing it.
+The second is to use of Cloud storage.
+
+ four steps protects your data from unexpected shutdowns, technological failure, and malicious cyber activity. 
+one replication. This concerns copying data from one location to another. It's like the autosave function in Microsoft Word that keeps recoverable near realtime copies of your information. 
+two is snapshots. A data snapshot is a regular save point throughout the day. It's good to implement a policy to schedule automatic saving of all your business information. 
+third step involves daily backups. In addition to regular snapshots, it's beneficial to store your information in a second location that is not on your premises (Cloud)
+forth step is what is known as the 3-2-1 backup strategy. If the information is particularly important, why not create three snapshots of the data? This is exactly what the 3-2-1 strategy is. 
+Use two different formats, such as locally on your computer where you create the information, as well as on your data server. Ideally, one of these copies is kept off site. 
+This way, the essential information used to run your business is always protected. Have different levels of importance, so implementing the 3-2-1 backup strategy may be considered excessive. 
+
+https://learn.microsoft.com/en-us/sql/relational-databases/linked-servers/linked-servers-database-engine?view=sql-server-ver16
+https://learn.microsoft.com/en-us/training/modules/protect-virtual-machines-with-azure-backup/2-azure-backup-features-scenarios
+
+
+
+-------------------- environment cloud and on-premises
+
+cloud
+pros - lower upfront cost, pay as you need, easier scaling
+cons - at risk wider range of threats, constant connection, bound to laws of data storage locations
+on-premises
+pros - full control hardware, data, software, less vuln to cyberattacks
+cons - higher initial cost, less flexible fo scaling
+
+
+--------------------- protect the environment
+
+Fundamentally, the steps are the same. Stop unauthorized access, limit mobility within a system once accessed, and employ a backup strategy
+Establishing good policies and procedures is vital regardless of how large the lock guard and your door is, it is only useful if the building is secure.
+
+ the first step in protecting data is monitoring traffic or incoming traffic is vetted before it can access the system. 
+Next managing the endpoints (mobile devices, desktop computers, virtual machines, cloud desktops, servers, and embedded devices, or any specialized devices needed for executing the business needs)
+next, identification using Identity and Access Management or IAM. Azure has a dedicated IAM called Active Directory, which ensures that access to specific documentation and services is only given to the appropriate people.
+it's not enough to only monitor who gains access. There must also be a means to control what changes they are allowed to perform. 
+Finally, one of the strongest measures a company can employ whether on-premises or cloud-based, is to provide technical training for staff. 
+
+
+
+
+
+
+
+
+
+
+
+
 
