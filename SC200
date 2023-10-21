@@ -94,18 +94,73 @@ cons - higher initial cost, less flexible fo scaling
 
 Fundamentally, the steps are the same. Stop unauthorized access, limit mobility within a system once accessed, and employ a backup strategy
 Establishing good policies and procedures is vital regardless of how large the lock guard and your door is, it is only useful if the building is secure.
+Specifically, a good policy must be able to prevent unauthorized access, limit mobility within a system, and minimize any damage resulting from a breach.
 
- the first step in protecting data is monitoring traffic or incoming traffic is vetted before it can access the system. 
+the first step in protecting data is monitoring traffic or incoming traffic is vetted before it can access the system. 
 Next managing the endpoints (mobile devices, desktop computers, virtual machines, cloud desktops, servers, and embedded devices, or any specialized devices needed for executing the business needs)
 next, identification using Identity and Access Management or IAM. Azure has a dedicated IAM called Active Directory, which ensures that access to specific documentation and services is only given to the appropriate people.
 it's not enough to only monitor who gains access. There must also be a means to control what changes they are allowed to perform. 
 Finally, one of the strongest measures a company can employ whether on-premises or cloud-based, is to provide technical training for staff. 
 
 
+Zero Standing Access 
+is the overarching concept that access to the production environment must be kept to a minimum and cannot be maintained over time. 
+This means that you must validate that you are authorized whenever you wish to access areas related to production. 
+Even so, your access will only allow you to make sufficient changes to the area you have been authorized to access.
+
+Just-In-Time (JIT)
+This means that after accessing a certain area, the user will only maintain access for a limited period of time before being automatically ejected or asked to re-enter an authorization code. 
+
+Just-Enough-Access (JEA)
+is about limitations on the changes you can make while you are in the area accessed.
+
+resources and tools used by Microsoft
+https://learn.microsoft.com/en-us/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10
+
+Azure Storage creates and stores multiple copies of data in multiple locations to ensure a solid backup plan
+https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy#geo-redundant-storage
 
 
+----------------------- Maintanance and Patches
+
+Software updates take an existing piece of code and alter it. 
+Motivations for this include adding and improving functionality, addressing and enhancing a security-related element, and removing bugs that affect how a program operates. 
+
+Patches are for newly identified shortcomings or dangers in existing software. They are small pieces of code that only modify the target area without impacting the general function of an application.
+The code deployed is never perfect. Over time incompatibilities or issues are identified. 
+If the issue is determined to pose an immediate danger to a system then a patch will be issued to address the issue immediately. 
+Later, at a scheduled update, a more permanent solution will be deployed. There are two categories of patches. 
+First, a bug fix patch is when an issue is identified with the code and the patch temporarily covers it. The second type is a security patch. 
+It is when a vulnerability that can be exploited for malicious intent is identified. 
+There are also concerns of how an update can make a familiar working environment unfamiliar by changing the layout or removing previously used elements. 
+Some patches also add functionality that is not required, and may even degrade the performance of other features. 
+Some users become reluctant to accept updates due to poor experiences that change the interface in a way that was undesirable. 
 
 
+patches are designed to prevent and mediate issues with code. Maintenance is defined as all the changes made to a code after deployment. This includes all the patches and updates. 
+A hot patch is an alteration to the code that does not require a system reboot. A cold patch requires the system to be rebooted before the update becomes active. 
+
+
+Software development is always evolving, and code written today is built on existing code. New software is usually a new variation of code that already exists. 
+This means that code written for one purpose is repurposed and used in a later iteration. This can lead to redundant code that potentially acts in different ways than expected.
+
+Bugs are codes that execute unexpectedly and sometimes produce an unintended result. Additionally, security defense and attack measures constantly reveal new vulnerabilities and potential problems with software applications. 
+To resolve these issues, the code is continually maintained and updated.
+
+Maintanances measures
+predictive - It is the practice of applying maintenance due to a signal that a failure will occur. Signals are determined by analyzing device signature patterns and predicting failure points.
+routine - preventative
+corrective - necessary repair
+
+The company can choose to accept the vulnerability. This approach means that the company has identified a potential weakness or failure. However, it leaves the problem unresolved.
+This may be done because the fix is ​​too large or because the damage that could be done is not great enough to justify the time spent fixing it.
+
+
+---------------- CVSS
+
+This is a standardized metric used to assess threat levels. However, in some systems, a combination of problems that arise tends to expose the network.
+While CVSS can indicate some dangers, the fault in a company's system could be a combination of outdated software coupled with an open port and some other misconfigurations. 
+Therefore, the IT professional evaluates each incident on a case-by-case basis. Analysis tools can only give indications; they do not guarantee the security of a system.
 
 
 
