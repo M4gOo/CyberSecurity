@@ -75,6 +75,8 @@ forth step is what is known as the 3-2-1 backup strategy. If the information is 
 Use two different formats, such as locally on your computer where you create the information, as well as on your data server. Ideally, one of these copies is kept off site. 
 This way, the essential information used to run your business is always protected. Have different levels of importance, so implementing the 3-2-1 backup strategy may be considered excessive. 
 
+ backup storage are durability, scalability, availability, and security.
+
 https://learn.microsoft.com/en-us/sql/relational-databases/linked-servers/linked-servers-database-engine?view=sql-server-ver16
 https://learn.microsoft.com/en-us/training/modules/protect-virtual-machines-with-azure-backup/2-azure-backup-features-scenarios
 
@@ -89,6 +91,8 @@ on-premises
 pros - full control hardware, data, software, less vuln to cyberattacks
 cons - higher initial cost, less flexible fo scaling
 
+The concept of a firewall applies differently for Cloud environments than it does for on-premises environments.
+Whereas an on-premises firewall only needs to monitor external traffic that tries to enter the system, the distinctions are less clear in a Cloud setup in which many system resources may be outside of the system
 
 --------------------- protect the environment
 
@@ -107,6 +111,7 @@ Zero Standing Access
 is the overarching concept that access to the production environment must be kept to a minimum and cannot be maintained over time. 
 This means that you must validate that you are authorized whenever you wish to access areas related to production. 
 Even so, your access will only allow you to make sufficient changes to the area you have been authorized to access.
+Zero Standing access is an example of security policy of reducing access
 
 Just-In-Time (JIT)
 This means that after accessing a certain area, the user will only maintain access for a limited period of time before being automatically ejected or asked to re-enter an authorization code. 
@@ -161,6 +166,56 @@ This may be done because the fix is ​​too large or because the damage that c
 This is a standardized metric used to assess threat levels. However, in some systems, a combination of problems that arise tends to expose the network.
 While CVSS can indicate some dangers, the fault in a company's system could be a combination of outdated software coupled with an open port and some other misconfigurations. 
 Therefore, the IT professional evaluates each incident on a case-by-case basis. Analysis tools can only give indications; they do not guarantee the security of a system.
+
+
+Additional resources: Maintenance and patching:
+https://learn.microsoft.com/en-us/training/modules/audit-vulnerability-management/attack-simulation-penetration-testing
+https://msrc.microsoft.com/update-guide/
+https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/standard-terminology-software-updates
+https://learn.microsoft.com/en-us/windows-server/get-started/hotpatch
+https://www.microsoft.com/insidetrack/blog/how-microsoft-is-transforming-its-own-patch-management-with-azure/
+
+
+---------------- Email
+
+emails are sent using the simple mail transfer protocol and retrieved with the pop three protocol. 
+Alternatively, you could use an email client, which is typically an application that you install on your computer. 
+A major advantage of an email client is that it allows you to access your existing messages without being online. 
+There are many options available, and some of the most popular include Outlook, Gmail, and Thunderbird
+
+Spam refers to unwanted or unsolicited email sent in bulk via text or email. 
+Typically, these emails appear as advertisements that attempt to get you to purchase or sign up for a product or website.
+But sometimes they ask for more, like trying to get your personal information. 
+Even worse, they can be sent as a Trojan horse that encourages you to click on a link that will release malicious code into your system.
+
+https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-protection-faq?view=o365-worldwide   -> Anti-spam protection FAQ
+https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-security-in-microsoft-defender?view=o365-worldwide  ->  Email security with Threat Explorer in Microsoft Defender for Office 365
+https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide
+
+
+Phishing emails are messages that attempt to hook people into revealing confidential information about themselves. They usually ask the user to click on a link and enter their details into it.
+Email spoofing is when a fraudulent email from a known source, such as Amazon or the post office, attempts to trick the user into taking an action, such as completing a payment.
+Spear phishing refers to emails created to be from someone you know, with some incentive to click on a link or trigger malware to be installed on the computer.
+Whaling is a type of spear phishing attack targeting CEOs or senior executives, with threats of legal ramifications if not responded to.
+Advertisements are emails that offer products or services. The offers may be legitimate, but they are often unsolicited and it may take a lot of effort to stop them.
+Chain letters: Emails that state that you will have bad luck if you don't forward them to 5 friends. This is a practice that has evolved and is practiced with social media posts.
+
+
+email providers now offer filtering options that will protect users from spam. 
+That includes:
+Automatic, continuous virus scanning, which continuously scans content for spam.
+Connection filtering monitors the sender profile and only allows in from trusted sources.
+Filtering functionality that is based on lists of domains and sites that are allowed or not.
+Quarantine is when suspicious messages are labeled as dangerous and kept separate for further investigation.
+
+
+setup outlook
+https://support.microsoft.com/en-us/office/learn-more-about-outlook-59f627d5-d877-4d0b-9e49-484c475a97fc
+https://learn.microsoft.com/en-us/training/modules/accessible-content-m365/04-outlook
+
+
+
+
 
 
 
