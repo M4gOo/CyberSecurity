@@ -292,3 +292,46 @@ Azure Synapse Analytics: A service that optimizes analytics tasks to provide fas
 Apache Hive: Data warehouse software built on top of Hadoop (a framework for online distributed databases) to provide data summarization, querying, and analysis.
 
 
+---------------- Machine Learning
+
+It is possible to automate much of the analysis by training a computer to do it instead through a process called machine learning. 
+Machine learning is a part of artificial intelligence that helps machines learn from data and make predictions. 
+It's a way of teaching a computer to recognize patterns and make decisions based on what it has learned. 
+can teach the computer how to find patterns in whatever you want, for example, sales data using a set of rules called algorithms. This helps the computer to better understand the data.
+
+it can be applied to cybersecurity as well, so how would that work?
+Imagine you are a security specialist and you want to prevent unauthorized entry into a system, you might set up a rule that too many failed login attempts will lock in account for awhile. 
+Or you might note the location and prevent access if it is different from what is expected.
+
+You may want to create a system to monitor credit card transactions for fraudulent activity. To reduce illegal activity, sophisticated machine learning models are trained to identify anomalies in a customer's action. 
+To train a learning model for this, a representation of your daily activities is built. 
+When processing images, these data points can be represented by pixels. In this case, the same algorithm may instead receive different data points, such as:
+
+The frequency of the activity.
+The location from where a transaction was executed.
+The amounts spent.
+The types of purchases made.
+
+When a flag is raised, it can trigger another action, such as sending an alert notification or activating an authentication application that needs to be released before the action is sanctioned. 
+The training data for these models is created based on previous transactions and instances labeled as "standard" and fraudulent. 
+First, the algorithm will identify anomalous activity or activity that deviates from the pattern. This can be used to apply additional checks to determine whether fraudulent behavior is occurring. 
+Furthermore, this methodology can be applied to detect attack patterns. Company logs after a breach can be analyzed to identify any patterns of activity that indicate an attack is in progress or about to happen. 
+These are called signature patterns.
+
+Machine learning engineers have created smart solutions that can catch the small giveaway details that people often miss. This leads to more capable cybersecurity systems that demand less human vigilance.
+By analyzing a senders emails a machine can learn to distinguish the tiny differences that separate a fake email from the real thing.
+
+Why is it important to preprocess data before using it to train a machine learning model? 
+if the data contains errors, the computer will give poor or inaccurate predicitions
+
+
+
+
+
+
+
+
+
+
+
+
