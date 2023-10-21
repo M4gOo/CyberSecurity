@@ -241,7 +241,7 @@ Blobs are stored in containers. This is like a filing system where each containe
 The blobs themselves will be unstructured, and further filtering or searching methods are needed to find a specific item inside the blob.
 
 
---------- data lake
+--------- data lake   https://azure.microsoft.com/en-us/products/data-lake-analytics/
 
 A repository that stores large amounts of data for later processing is known as a data lake. A data lake allows actionable insights to be extracted from the data at a later stage, like reports, big data, analysis
 
