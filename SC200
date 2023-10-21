@@ -214,12 +214,81 @@ https://support.microsoft.com/en-us/office/learn-more-about-outlook-59f627d5-d87
 https://learn.microsoft.com/en-us/training/modules/accessible-content-m365/04-outlook
 
 
+------------------- Storage
+
+The Azure storage platform includes the following data services. 
+Azure Files, which manages file-sharing for Cloud-based storage. 
+Azure Blob Storage, which is scalable object store for text and binary data. 
+Azure Managed Disks, which involves block-level storage that's accessible using virtual machines. You can have the benefits of versatile storage by integrating Azure Managed Disks into your business setup
+Azure allows data access through several methods including HTTP, HTTPS, and rest API. This is the same as accessing a web page by typing the URL in the search bar. 
+The difference is that you first need to be authorized to access these sites. This can be useful for remote collaboration, for example, 
+say there is a document saved in Azure files that is edited by several employees. They can access the document from various locations, but each employee first needs to login securely to gain access. 
 
 
+Data is categorized as structured or unstructured data. 
+
+structured data. When you fill out a form, each column has a name and a place to enter the appropriate data, this is an example of structured data. 
+Another example is a database table. In every table there are rows and columns and each of the values in the columns relates to the row. 
+In databases, information is ordered according to the Schema. The Schema is the template database uses to decide what type of data goes where.
+
+unstructured data, which is less organized with no clear path for searching or filtering. 
+Imagine taking your favorite book, separating each page, then placing the individual pages into a box and shaking it. All the information is still there, but there was no structure in how it is saved. 
+You may have come across the term blobs. Blob is an acronym that stands for binary large objects, and it simply stores unstructured data. As the name suggests, it stores large, unstructured objects. 
+Examples of unstructured data that accompany may keep include streaming data from the security cameras or sensor output data from on-premises devices.
+
+Blob works
+Blobs are stored in containers. This is like a filing system where each container has a general name like pictures or movies. Inside this container, you can store as many blogs as required.
+The blobs themselves will be unstructured, and further filtering or searching methods are needed to find a specific item inside the blob.
 
 
+--------- data lake
+
+A repository that stores large amounts of data for later processing is known as a data lake. A data lake allows actionable insights to be extracted from the data at a later stage, like reports, big data, analysis
 
 
+Data Lake Benefits and Challenges
 
+Data lakes are widely used and maintained by companies, but why is this the case? Some of the reasons may include:
+
+The data may be more valuable in the future in ways that are not currently known.
+By storing the data wholesale, scientists can make different exploratory queries with the aim of discerning some valuable insights. These potential insights can be lost if data is processed before it is stored.
+The unstructured nature of a data lake means that data can be stored in a variety of ways and does not need to be processed and transformed beforehand.
+
+In addition to their benefits, data lakes also present some challenges, such as the following:
+
+The lack of a schema means that data does not need to be processed before being stored. However, this makes it difficult to query and find specific data.
+A lack of data analysis means there is no way to ensure that the data stored has merit or value.
+Security can be an additional challenge, as lack of knowledge about the quality of stored data makes it more difficult to regulate access.
+The lack of structure to data means that some information can be lost or forgotten over time.
+
+
+------- data warehousing
+
+A data warehouse is like a data lake, except that the information found in it has been processed and cleaned so that it is easily acceptable. 
+To do this, lake data is extracted, formatted, validated, summarized, and otherwise processed and stored in the data warehouse. When the data is in the data warehouse, 
+it is possible to obtain actionable intelligence from it.
+
+
+Data warehouse benefits and challenges
+
+A company may choose a data warehouse over a data lake for the following reasons:
+
+It serves as a single source of truth as past performance can be compared with current performance. For example, if a company implements a new format for maintaining records, it can reference historical record storage to prove the effectiveness of the new approach.
+A data warehouse enables the filtering and cleaning of data in a data lake and facilitates analysis to obtain essential, actionable insights.
+Data warehouses store information in a structured way. This makes it much easier to apply learning models to data without having to change the way the data is presented.
+A data warehouse leads to greater awareness of data and allows for a better verification process for proper access.
+
+However, remember that data warehouses do not come without some disadvantages, such as the following:
+
+Creating a data warehouse from a data lake requires significant effort. It can be challenging to know how data is structured without in-depth investigation. For example, images or words may need to be converted to numbers for analysis, but formatting data for one purpose may be inappropriate for another.
+Domain expertise is required to orchestrate the data. Due to the potential size of data lakes, data transfer and processing can be expensive. Therefore, before applying any process, a domain expert must identify what and how data should be transferred.
+Cleaning data into a desirable format can be challenging when there are many data items.
+
+
+Three useful Azure technologies that can be used for data storage are:
+
+Azure SQL Database: A fully managed cloud relational database that offers automatic remediation, built-in security, and on-demand data protection.
+Azure Synapse Analytics: A service that optimizes analytics tasks to provide faster insights. It provides integration between Microsoft's data warehousing and big data analytics capabilities in a single service.
+Apache Hive: Data warehouse software built on top of Hadoop (a framework for online distributed databases) to provide data summarization, querying, and analysis.
 
 
