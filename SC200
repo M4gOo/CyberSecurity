@@ -368,9 +368,14 @@ https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/ipv6-overview
 https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379516(v=ws.10)
 
 
+Hybrid networks come in many different shapes and sizes. But it's the mix of connectivity types that makes them hybrid. 
 
-
-
+What is cloud?
+1 - On-Demand Self-Service - can provision capabilities as needed without requiring human interaction.
+2 - Broad Network Access - access services over the network and accessed through mobile phones, tablets, laptops, and workstations.
+3 - Resource Pooling - no control or knowledge over the exact location of the resources, those resources are pooled to serve multiple consumers.
+4 - Rapid Elasticity - capabilities can be elastically provisioned and released to scale rapidly in response to system load
+5 - Measured Service - Resource usage can be monitored, controlled, reported and billed. Pay for what you consume
 
 
 
