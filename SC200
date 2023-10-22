@@ -1,4 +1,6 @@
 
+https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWREfA
+
 Cybersecurity protects your digital information, devices and assets, such as your bank accounts, files, or even photos. System protection is equally important. 
 It is a feature that creates restore points that allow you to set your devices to a previously healthier state before changes may have led to malfunctions or data loss. It is your backup plan.
 
@@ -323,6 +325,52 @@ By analyzing a senders emails a machine can learn to distinguish the tiny differ
 
 Why is it important to preprocess data before using it to train a machine learning model? 
 if the data contains errors, the computer will give poor or inaccurate predicitions
+
+
+================== NETWORKING ========================
+
+A network is a group of connected devices that can communicate with one another and share resources.
+WANs cover vast areas like a city or even a whole country. The Internet is an example of a wide area network.
+metropolitan area network, or MAN. A MAN is used to connect local area networks located in different buildings or neighborhoods within a city. It is mostly used by organizations that have multiple locations within a city. 
+SAN, which is used to provide multiple servers access to storage devices such as hard drives. 
+
+
+These include bus, ring, star, mesh, entry topologies.
+A network topology determines how devices are connected and data travels through the network.
+
+Bus topology is best for small networks with few devices that are located close together.
+All devices on the network receive the data, but only the device that the data is intended for processes it. 
+
+ring topology, which connects devices in a loop or circle. Data is sent from one device to another in a specific order, and each device repeats the data before passing it on to the next device. 
+In a ring topology, data travels in only one direction and the devices are linked to each other through connectors. 
+Ring topology is usually used for high-speed data transfers between devices in a closed loop network when the data needs to travel in a specific direction from one device to another. 
+
+star topology, devices are connected to a central switch. The switch acts as a central control point for the network and all data is sent through it. 
+In a star topology, each device is connected to the switch with its own cable. This is the most common topology used in homes or small offices
+is simple and it provides and maintains good performance. It's also very simple to troubleshoot because it's easy to isolate and investigate one device without affecting others
+
+mesh topology, in which devices are connected to each other in a network of interlocking nodes. An interlocking node is when a device is connected to two or more devices in a mesh network. 
+In such an arrangement, data can be sent from one device to another through multiple paths and there is no central point of control. 
+Mesh topology is a good choice when the reliability is important because if one path fails, data can be sent through another path.
+
+tree topology. In this case, devices are connected to a central bus or line, and then sub-networks are created with their own bus or line. Each sub-network can then have its own tree topology. 
+Tree topology is also known as hierarchical topology. It is used for medium to large size networks where multiple star topologies need to be connected to each other. 
+
+
+A   10.0.0.0-10.255.255.255
+B   172.16.0.0 - 172.31.255.255
+C   192.168.0.0 - 192.168.255.255
+
+By default, Windows uses APIPA to assign itself an IP address automatically from the 169.254.0.0 to 169.254.255.255 address range.
+
+https://learn.microsoft.com/en-us/training/modules/network-fundamentals/5-ip-tcp-basics
+https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/ipv6-overview
+https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379516(v=ws.10)
+
+
+
+
+
 
 
 
