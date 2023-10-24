@@ -378,6 +378,231 @@ What is cloud?
 5 - Measured Service - Resource usage can be monitored, controlled, reported and billed. Pay for what you consume
 
 
+--------- OSI model
+
+The first advantage of the OSI model is that it provides an organized structure by dividing the functions of a network into seven transparent layers. 
+This makes it easier for network administrators and engineers to understand the flow of data and troubleshoot problems.
+
+OSI model is also widely accepted and standardized. This simplifies communication and collaboration between different networks and vendors.
+
+Each layer in the OSI model can be modified or improved independently without affecting the other layers. 
+
+The bottom layer, or the physical layer, converts the data into wireless or electrical signals for transmission through the air or through cables.
+The next layer, the data link layer, ensures that the data is ready for transmission by making sure it is reliable and error free. 
+The network layer selects the best path to route data packets over a network and addresses devices with the IPv4 and IPv6 protocols. 
+Then the transport layer establishes connections between devices and can ensure reliable transport between the two. 
+The fifth layer, the session layer, is responsible for managing communication sessions or states between applications. 
+Next up, the presentation layer's role is quite interesting since it deals with data formatting, encryption, decryption, and data presentation. 
+And the final layer, or the application layer, plays an essential role by enabling the users or devices to communicate with each other. 
+This layer provides an interface with which you can access the network to perform the necessary tasks.
+
+
+smtp, http protocol - application layer (TCP/IP SUITE)
+TCP, UDP protocol - transport layer (TCP/IP SUITE)
+IPv4, IPv6 protocol - internet layer (TCP/IP SUITE)
+Ethernet, WiFi protocol - network access layer (TCP/IP SUITE)
+
+
+-------- TCP/IP
+
+TCP/IP is the primary protocol used all over the world by millions of devices to send information online on different kinds of networks. 
+
+The Internet Protocol or IP ensures the packets get to the right destination and the Transmission Control Protocol or TCP makes sure that the packets arrive safely and in the correct order. 
+even if some packages get lost along the way, TCP will send them again to make sure the information gets to its destination intact.
+
+First, data is divided into smaller parts called packets, before being sent over the network. These packets then travel over the network, which may be physical wires or wireless signals to reach their destination. 
+The next step is the reception of the packets. The destination device collects all the packets and puts them back together to recreate the original data. But sometimes data can get lost along its journey. 
+So the fourth step is to make sure all the packets are correct and have arrived in the right order. 
+For this reason, the TCP protocol adds extra information to each segment of data known as a sequence number and acknowledgment number. 
+When delivered successfully, an acknowledgment will be sent back to close the process. 
+But the TCP delivery check process can only happen once devices have found each other over the network, and this happens next with the IP protocol
+The bottom layer is the network interface or data link layer and is physical link between the computer and the network. 
+It is responsible for sending and receiving data over the network using hardware such as network adapters. The next layer, the Internet layer, forwards packets from the source to the destination.
+The transport layer works in the background and ensures that the data is sent reliably, meaning all data packets are verified by the TCP protocol, but this takes time.
+The top layer, the application layer deals with the applications running on the devices and the data that they generate. In other words, it provides an interface for the user to access network resources. 
+
+
+A camada de transporte é responsável pela entrega de dados entre aplicativos em hosts separados.
+A camada da Internet é responsável por endereçar e rotear pacotes de dados entre redes
+
+ IP addresses are vital in identifying different devices on a network to route traffic to the intended destination.
+
+ports, and they allow various types of data to be sent and received by specific applications.
+ports identify and allow certain types of data to access the network. 
+if data tries to enter a network without the proper port number, the network's security measures, like firewalls, may block its entry to protect against unauthorized access.
+Port numbers are used to identify different types of data during transmission and are assigned within the transport layer of both the TCP IP suite and the OSI model.
+
+Firewalls rely on port numbers to permit or deny access to a network, but managing the range of port numbers is equally important to prevent unauthorized access. 
+
+Port numbers identify a particular application or service on a system. An IP address identifies a machine in an IP network and determines the destination of a data packet, 
+while port numbers identify particular applications or services on a system.
+
+The sender selects a source and destination IP address and identifies the protocol they want to use, which is SMTP. SMTP uses port number 25 for its communication.
+The destination port is always the service or protocol being accessed. Once the protocol is chosen, the devices involved have a set of rules to follow to ensure the conversation is successful.
+
+By using a separate port number for each session, multiple sessions can be opened simultaneously on the computer
+
+https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+
+Identifying Protocols and Sessions on a Windows Machine
+ netstat -a
+
+https://blog.hubspot.com/website/http-vs-https   
+The SSL certificate encrypts your information 
+The TLS Protocol prevents your data transfer from being tampered with, ensuring users communicate with the right website 
+
+
+----- DNS 
+https://learn.microsoft.com/en-us/windows-server/networking/dns/quickstart-install-configure-dns-server?tabs=powershell
+https://public-dns.info/
+
+
+The DNS server acts as a translator, taking the name you typed and converting it to an IP address that can be located for the relevant website. 
+The IP address is stored in the DNS server as a record and there are a number of record types. The DNS server will use an address record or a record when simply looking for a website name translation. 
+Another type of record is a domain name system service record, or SRP, which can tell the device what services are available for a particular website
+DNS needs to be fast. UDP is the preferred protocol because it doesn't provide packet delivery check overheads. 
+
+
+common attacks on DNS
+
+DNS Flood Attack
+DNS Amplification
+DNS Tunneling
+DNS hijacking
+DNS spoofing
+
+
+Monitoring can be divided into two main tasks: network monitoring and network traffic monitoring. On the one hand, network monitoring involves monitoring network devices for availability and failures. 
+On the other hand, network traffic monitoring is about monitoring what protocols and data are circulating on a network and monitoring performance and security threats.
+
+Bandwidth monitoring
+Bandwidth  determines the rate of data movement on a network.
+Bandwidth is like the road, you can only accommodate so many cars before the road becomes blocked. That's why it's critical to monitor what's using a lot of bandwidth.
+
+User monitoring
+When monitoring the network, you also want to track users to see what applications they use and what their regular daily activities are. This can create an audit trail, but more importantly, 
+it reveals patterns so you can better understand how network traffic behaves on a day-to-day basis. Knowing how the network behaves makes it easier to identify when something is not right.
+
+Network traffic monitoring steps
+Network monitoring can be divided into three steps: 
+Step 1 is choosing the right data source. 
+Step 2 involves analyzing the correct component in a network. 
+Step 3 is using a monitoring tool to optimize and display the data in a readable format.
+
+Step 1: Choosing data source and protocols
+To monitor network traffic, you need to determine the best source. This monitoring can be divided into two categories: packet capture and flow analysis.
+
+Packet capture
+This is a way of collecting copies of packets that are moving across a network. You may decide to do this at different points on the network using a computer running packet capture software and a mirrored port.
+A mirrored port is created to copy all data passing through it to the port on your computer and to the connected packet capture software. 
+Traditionally, an application called Wireshark has been the best option for carrying out this activity.
+
+Flow Analysis
+Flow analysis is supported by many network devices and is typically a built-in feature. Two protocols that can do this are called Netflow and Sflow.
+Netflow is a Cisco proprietary protocol that runs on Cisco routers and switches. Sflow is designed to work across platforms.
+Netflow only collects IP traffic, but SFlow can collect and analyze data from layers 2 to 7 of the OSI model. 
+This type of analysis does not copy data from one port to another, so it is very flexible as data can be collected centrally.
+
+Step 2: Selecting the Correct Component
+Devices on the network that can support traffic monitoring include servers, switches, routers, and firewalls. You can even monitor specific interfaces and their applications, in addition to devices.
+However, you do not want to capture everything that happens everywhere on the network, as this will generate a lot of data for analysis. You need to choose the main areas of the network that oversee communication.
+
+But as the network grows, packet capture will only be used to troubleshoot specific problems in a specific area, as it is restricted to the area you are connected to. 
+Flow analysis does not capture entire data packets like packet capture. 
+Instead, it captures packet details such as ports and IP addresses. In other words, just the information needed to understand data from many different devices at the same time.
+
+Step 3: Use monitoring tools
+When a network grows, so does the amount of data flow that you will need to analyze, and this is when you need third-party software that can collect all flow traffic. 
+There are many different traffic monitoring tools that are very capable of analyzing flows and putting the data into an easy-to-read format. 
+Typically, they also include tools to alert a network manager about problems or anomalies in the network.
+
+
+
+Health analytics and metrics
+
+Health and metric analysis are about spotting trends and patterns in data collected from network traffic monitoring. 
+The identified trends and patterns can then be used to proactively introduce traffic management methods to keep the network healthy. 
+Traffic management methods can ensure that the capacities on network devices are maximized without overloading them thereby increasing the return on investment or ROI. 
+Metric analysis involves measuring key performance statistics to understand how something is performing and predict its future performance based on the gathered data. 
+Tools used for this prediction generally need at least 30 days worth of data to create a baseline performance. 
+For a network, there are several different metrics that can help determine network health and performance. 
+
+
+First is bandwidth usage. 
+This metric is about checking that you are not going over the amount of available bandwidth. 
+If the bandwidth usage is too high, it can affect the network's performance by slowing things down.
+The second metric is packet loss. 
+When packets get lost on the network between the source and destination, you know that TCP can re-send those lost packets. 
+But that can actually create more congestion on the network if it occurs too often. 
+The third is latency. 
+This is how long a packet takes to move across the network and back again. It's also known as the round trip time or RTT. 
+Last is network availability. 
+This is a key metric because it reflects up time on the network. In other words, it tells you when the network is working and when it is not. 
+These metrics and others can tell you how healthy your network is and how well it's performing.
+
+traffic management. A network can be set up to manage its performance by utilizing something called Quality of Service or QoS. 
+QoS is a suite of different traffic management mechanisms that can be used at different times based on network performance. 
+Although traffic monitoring is ongoing, traffic management mechanisms should only be turned on when needed. 
+If everything works as it should, you don't need to create extra work. Two of the mechanisms included in QoS are traffic marking and prioritization.
+
+https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service
+
+For example, real-time information like video calls should be prioritized. Less critical traffic, like email can be given a low priority.
+
+
+this information should not only be monitored; they must also be registered. -> log file
+
+Typically, logs contain five header areas. Are they:
+
+Timestamp - the time of the event.
+Record level - the degree of severity or importance of the event.
+Username - who caused the event.
+Service or application - what caused the event.
+Event description - what happened.
+
+
+Types of log files
+
+Event Log - Records information about network traffic usage and tracks login attempts, application events, and failed password attempts.
+System log (or syslog) - records operating system events, including startup messages, system changes, shutdowns, errors, and warnings.
+Server Log - Contains a record of activity in a text document related to a specific server over a specific period of time.
+Change Log - Lists changes made to an application or file.
+Availability Log - Tracks system uptime, availability, and performance.
+Authorization and access log - lists who is accessing applications or files.
+Resource log - Provides information about connectivity issues and any capacity issues.
+
+Logs can be stored in several different formats. Applications like Windows Event Viewer make it easy to troubleshoot and view different events. 
+But not all devices on a network have a graphical application like the event viewer on a Windows PC. Many logs are plain text files
+
+have a tool that can capture, display and even analyze the logs for you. For example, Windows Azure Monitor
+
+findstr is the command to use in the command prompt application. Linux uses grep command
+Windows PowerShell is another powerful tool used to filter and search using the Select-String command. https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string?view=powershell-7.3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
