@@ -745,15 +745,35 @@ Brute force attack: The attacker systematically tries all possible combinations 
 Rainbow Table Attack: The attacker uses precomputed tables of hashed password combinations (called rainbow tables) to quickly look up the plaintext password corresponding to a given hash. 
 This method can be faster than brute force, but it requires significant storage resources. A password hash is a mathematically calculated, encrypted version of your password.
 
+suspicious signs of a phishing attack. 
+These signs include:
+First-time or infrequent senders
+Incompatible email domains
+Generic greetings
+Urgent calls for action or threats
+Inadequate spelling and grammar
+Suspicious links or unexpected attachments
 
 
+-------- Network security
 
+Effective network security is built upon three core principles. 
+Confidentiality, integrity, and availability. 
+Confidentiality ensures that only authorized individuals have access to sensitive information. 
+Integrity guarantees that your data remains accurate and unaltered. 
+Availability ensures that your digital resources are accessible to authorized users whenever needed. 
 
-
-
-
-
-
+network security tools, 
+Firewalls are the first line of defense for all networks and a critical tool in the network security toolbox. 
+firewalls prevent suspicious traffic from coming in or going out of the network. But they also stopped port scanning. 
+Another crucial tool is passwords, which is not just for protecting user accounts, but also to secure servers, Wi-Fi networks, and other network devices.
+should also implement passwordless authentication and multi-factor authentication where possible, for an extra layer of security
+An Intrusion Detection System or IDS, is another preventative tool. It continuously monitors networks for any signs of suspicious activity or potential threats.
+An IDS analyzes network traffic patterns and compares them against known attack signatures
+Anti-malware tools also form a part of the network security toolbox.
+network administrators should perform regular network maintenance tasks which can protect against various types of attacks. 
+Network administrators should regularly update software, perform vulnerability assessments, and monitor traffic and system logs. 
+Finally, it's crucial to educate the users in your network because human error is often considered the main weak link in a network
 
 
 
