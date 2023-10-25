@@ -597,6 +597,8 @@ criminals can also exploit remote users by sending fake remote access links or m
 
 VPNs are widely used for remote access to corporate networks because they provide an improved level of security. VPNs use many different protocols for authentication, data encryption, and tunneling.
 Tunneling is a process by which VPN software connects to the destination and sends data. Some of the protocols VPNs use include IPSec, SSL or TLS, PPTP, L2TP, and OpenVPN and others. 
+VPNs provide a secure and private connection between two devices over the Internet. VPNs use encryption and authentication for your Internet traffic,
+making it difficult for third parties to intercept or eavesdrop on your traffic.
 
 RDP is built into the Windows operating systems and is commonly used for remote access to individual computers or servers. 
 
@@ -629,19 +631,119 @@ https://learn.microsoft.com/en-us/training/modules/explore-remote-access/
 
 
 
+One way to improve the security of passwordless authentication is by incorporating a two-factor authentication system.
+
+authentication protocols that organizations use, such as LDAP, which stands for Lightweight Directory Access Protocol.
+LDAP is a protocol used to access and manage centralized user authentication and authorization. 
+Azure Active Directory is a very popular service that uses LDAP, or RADIUS, which stands for Remote Authentication Dial-in User Service. 
+RADIUS is a client-server protocol that provides centralized authentication, authorization, and accounting management for users who connect and use a network service. 
+It is often used for remote access to networks. 
+Terminal Access Controller Access Control System Plus (TACACS+). This is a security protocol that provides centralized authentication, authorization, and accounting services. 
+TACACS+ separates authentication, authorization and accounting functions, allowing for more granular control of access to network resources.
+
+Another protocol is called certificate-based authentication, which is an authentication method that uses digital certificates to verify the identity of a user, device, or application.
+And lastly, Kerberos is a network authentication protocol that provides mutual authentication between a client and a server in a network environment. 
+It protects businesses against password sniffing attacks by encrypting authentication credentials. It is commonly used in Windows domains.
+
+
+Authorization templates
+
+Role-based access control (RBAC): RBAC is a model that assigns permissions and privileges to users based on their predefined roles in an organization. 
+This model is designed to simplify the management of large-scale systems by reducing the need for individual user-level permissions. 
+This is the most common and widely adopted access control model. With RBAC, you can easily form a group of individuals, assign them to a role, and then grant or deny permissions based on that role.
 
 
 
+Wi-Fi router security protocols
+
+WEP (Wired Equivalent Privacy): WEP is an older wireless security protocol that is no longer considered secure. WEP uses a shared key to authenticate users and encrypt data. 
+However, WEP is vulnerable to security breaches and its encryption can be easily broken.
+
+WPA (Wi-Fi Protected Access): WPA is a wireless security protocol that offers stronger encryption and authentication than the older WEP standard. WPA uses a passphrase or key to authenticate users and encrypt data. 
+WPA2 is the latest version of WPA and is considered the most secure wireless security protocol.
+
+WPA2 (Wi-Fi Protected Access II): WPA2 is the most widely supported wireless security protocol today. 
+It uses a stronger encryption algorithm than WPA and offers better protection against hackers and security breaches.
+
+WPA2-PSK (Wi-Fi Protected Access II with Pre-Shared Key): WPA2-PSK is a version of WPA2 that uses a pre-shared key (PSK) for authentication. 
+This means that all devices that connect to the wireless network must know the same PSK to access the network.
+
+EAP-TLS (Extensible Authentication Protocol-Transport Layer Security): EAP-TLS is a wireless security protocol widely used in enterprise-grade networks. 
+It offers robust security using digital certificates to authenticate users and encrypt data. EAP-TLS is considered one of the most secure wireless security protocols available.
+
+MAC-based security: MAC-based security is a wireless security protocol that uses a device's Media Access Control (MAC) address to authenticate users and grant access to the wireless network. 
+MAC-based security is more secure than WEP, but less secure than WPA or WPA2.
+
+How to keep a wireless network secure
+Remember to change the default username and password
+Always use strong encryption: It is essential to enable WPA2 (Wi-Fi Protected Access II) encryption on your router to secure your wireless network.
+Set up a guest network: If you frequently have visitors who need to use Wi-Fi, set up a guest network with a different password to keep the main network secure.
+Enable MAC address filtering: MAC address filtering allows you to restrict access to your network by only allowing specific devices with pre-approved MAC addresses to connect.
+Keep your router's firmware up to date: Router manufacturers regularly release firmware updates to address security vulnerabilities. Make sure to keep your router's firmware up to date by regularly checking for updates.
+Disable remote management: Unless you need it, disable remote management on your router. It is a security risk as it allows cybercriminals to access router settings from outside your network.
 
 
+The basics of modern authentication - Microsoft identity platform
+https://www.youtube.com/watch?v=tkQJSHFsduY
+
+https://www.microsoft.com/en-us/security/business/solutions/passwordless-authentication
+
+https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/vpn/vpn-connection-type
 
 
+DDoS is one of many kinds of cybersecurity attacks, and it involves multiple sources simultaneously flooding a network with traffic, making it impossible to operate. 
+
+A network attack is mostly an attempt to gain unauthorized access to a computer network, system, or device with the intent of stealing, damaging, or manipulating data.
+
+Active attacks are usually easier to detect than passive attacks because they typically involve some level of disruption to network operations, such as modifying or stealing data.
+
+Sniffing is part of espionage and involves listening to communication between two devices, intercepting it, capturing it and analyzing it. 
+This type of attack can steal your data remotely, without even physically accessing your computer.
+The sniffing software simply sits in between the communication process, sees what's coming in and out, and reads it all.
+
+Spoofing is done using specialized software or tools to modify packet headers, forge DNS responses, or create ARP packets. 
+This allows attackers to intercept or redirect network traffic, bypass security controls, or gain unauthorized access to sensitive systems and data. 
+In IP spoofing, for example, the attacker changes the source IP address in the IP packet header, making it appear as if the packet originates from a legitimate source. 
+In DNS spoofing, the attacker provides a forged DNS response, directing the user to a malicious website. 
+The main objective of spoofing is to deceive network components or users, allowing the attacker to carry out various malicious activities while disguising himself as a trusted entity. 
+Tools like hping, scapy or Nmap are used to carry out spoofing attacks.
+
+----- Network attacks
+
+eavesdropping, which involves intercepting and reading data transmitted over a network. 
+This can include sensitive information such as passwords, credit card numbers, and other personal data. Eavesdropping involves various tools and could be an automatic or manual process. These tools are used for intercepting, capturing, and analyzing network traffic.
+This process is called packet sniffing. The impact of eavesdropping can be severe as it can lead to data exposure and information theft.
+
+ Packet spoofing is when an attacker sends packets of data with a forged source address to make it appear that the packets are coming from a trusted source. 
+The purpose of packet spoofing is often to trick the recipient into accepting the packets as legitimate and allowing the attacker to gain unauthorized access to the recipient's network or systems. 
+
+ IP Spoofing. And it involves forging the source IP address of a network packet to make it appear as though it came from a trusted source. This can be used to gain unauthorized access to a network or to steal data.
+To prevent Spoofing, it is essential to implement network filters to prevent Spoofed packets from entering the network.
+
+ man-in-the-middle attack involves intercepting communication between two parties and relaying messages between them. 
+This gives the appearance of normal communication while secretly eavesdropping and potentially modifying the messages. This can lead to information theft, data exposure, and unauthorized access.
+
+---- malicious common attacks
+
+Another malicious attack type is Backdoors, and just like the name suggests, it involves creating a hidden entry point into a network or system that bypasses standard security measures. 
+Backdoors can be used to gain unauthorized access, steal data, or install malware.
+
+password cracking, which involves attempting to guess or crack a user's password to gain access to their account. 
+This can affect not only users, but also servers, Wi-Fi routers, or any network resource that is protected with a password. 
+
+SQL injection. SQL, or Structured Query Language, is a language used to access and alter database tables and records, and SQL injection is one of the most common attacks against web applications. 
+It causes significant damage to organizations and businesses that use databases to store sensitive data. 
+With SQL injection, attackers can exploit vulnerabilities in SQL statements to access sensitive information such as usernames and passwords and use this information for further attacks. 
 
 
+---- Cracking Wi-Fi passwords 
 
+Dictionary attack: The attacker uses a list of commonly used passwords or phrases to attempt to systematically gain access to the network.
 
+Brute force attack: The attacker systematically tries all possible combinations of characters to discover the password. This method can be time-consuming and resource-intensive.
 
-
+Rainbow Table Attack: The attacker uses precomputed tables of hashed password combinations (called rainbow tables) to quickly look up the plaintext password corresponding to a given hash. 
+This method can be faster than brute force, but it requires significant storage resources. A password hash is a mathematically calculated, encrypted version of your password.
 
 
 
