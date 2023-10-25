@@ -580,6 +580,48 @@ findstr is the command to use in the command prompt application. Linux uses grep
 Windows PowerShell is another powerful tool used to filter and search using the Select-String command. https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string?view=powershell-7.3
 
 
+remote access also poses some cybersecurity risks. 
+First, remote access software is a prime target. When remote access software is unsecured, outdated or unpatched, it can allow unrestricted network access to anyone on the internet.
+Weak authentication, like simple passwords, can allow cybercriminals to take over user accounts. 
+criminals can also exploit remote users by sending fake remote access links or malicious attachments in phishing emails.
+
+VPNs are widely used for remote access to corporate networks because they provide an improved level of security. VPNs use many different protocols for authentication, data encryption, and tunneling.
+Tunneling is a process by which VPN software connects to the destination and sends data. Some of the protocols VPNs use include IPSec, SSL or TLS, PPTP, L2TP, and OpenVPN and others. 
+
+RDP is built into the Windows operating systems and is commonly used for remote access to individual computers or servers. 
+
+But what if you need to connect over an unsecured network like free public WiFi? Well, in unsecured networks, IT technicians use the Secure Shell
+
+Remote Access Services, or RAS, a Microsoft technology that allows dialing into a network from a remote location. 
+It allows remote users to establish a secure connection to the network over a phone line or the internet. 
+RAS is a predecessor of Routing and Remote Access Service, or RRAS. This built-in Windows operating system tool enables remote access and routing services. 
+It can be used to create a VPN server as well as dial up, and wireless networking connections. RRAS also supports several authentication methods. 
+
+How does DHCP work?
+When a device connects to a network, it sends an IP address request to the DHCP server. 
+The DHCP server then assigns an available IP address to the device, along with other network configuration settings such as
+Subnet mask
+Default gateway
+DNS server addresses
+
+DHCP uses a process called leasing to specify IP addresses. When a device needs IP addresses and sends a request to the DHC server, 
+the server assigns it an address from the pool of available IP addresses. Additionally, the server assigns a lease time to the IP address, 
+which is the length of time that the device can use the IP address before it needs to be renewed.
+When the lease time expires, the device must renew the IP address by requesting a new lease from the DHCP server. 
+If the IP address is still available, the server will renew the lease and extend the lease term. If the IP address is no longer available, 
+the server assigns the device a new IP address.
+
+https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/set-up-your-small-business-network
+https://learn.microsoft.com/en-us/troubleshoot/windows-server/printing/install-configure-file-print-server
+https://learn.microsoft.com/en-us/training/modules/deploy-manage-dynamic-host-configuration-protocol/
+https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-deploy-wps
+https://learn.microsoft.com/en-us/training/modules/explore-remote-access/
+
+
+
+
+
+
 
 
 
