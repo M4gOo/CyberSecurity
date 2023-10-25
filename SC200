@@ -4,7 +4,17 @@ https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWREfA
 Cybersecurity protects your digital information, devices and assets, such as your bank accounts, files, or even photos. System protection is equally important. 
 It is a feature that creates restore points that allow you to set your devices to a previously healthier state before changes may have led to malfunctions or data loss. It is your backup plan.
 
+InfoSec - Principle of Information Security - CIA triad - - confidentiality, integraty and availability.
+confidentiality: data is kept confidential and private. People not authorized wont see the data. Avoid disclosure
+integraty: make sure the data is authentic, accurate, reliable and free tampering. Data is not changed. Avoid alteration
+availability: data is available to those who need it. Avoid Denial
+Firewall helps avoiding those issues denial, disclosure and alteration
 
+authentication, authorization and accounting (AAA) - framework that controls resources, enforces policies and audit usage.
+this helps screening users and keeping track of their activities while they are connected
+Authentication - process of identifying and verifying a person or thing.
+Authorization - process of controlling access to resources. Privileges to access certain areas
+Accounting - tracks information of agent activities on computer devices and networks (time loged in, data sent and received, their IP). Usually is used for audit, analyze user trends, billing.
 
 ----------- THREAT LANDSCAPE  
 
