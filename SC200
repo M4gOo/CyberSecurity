@@ -776,8 +776,8 @@ Network administrators should regularly update software, perform vulnerability a
 Finally, it's crucial to educate the users in your network because human error is often considered the main weak link in a network
 
 
----- firewall
-
+---- firewall    https://www.checkpoint.com/cyber-hub/network-security/what-is-firewall/
+ 
 a firewall is a network security device that sits between a trusted and untrusted network, such as the Internet.
 You can compare it to a country's border control. In the same way, officials check people to ensure they aren't carrying anything that 
 isn't allowed in and out of the country, firewalls analyze all incoming and outgoing traffic. 
@@ -877,13 +877,18 @@ Penetration testing
 Continuous monitoring - firewalls and tools such as Microsoft Sentinel can send threat alerts from several different sources on the network.
 
 
-you will need good change control procedures to reduce the most significant risk to firewalls: misconfiguration!!!
+you will need good change control procedures to reduce the most significant risk to firewalls: misconfiguration!!!    https://docs.rackspace.com/docs/best-practices-for-firewall-rules-configuration
 
 Changing a rule in a firewall can prevent something from working or even allow some completely new and unknown risks to pass through the firewall. 
 This is why testing a new rule in a test environment separate from the network is so important and helps minimize risks. 
 This can be difficult for a small company, so having a good rollback plan is just as important. If something happens that shouldn't, the rollback plan allows you to undo the changes.
 
-
+https://learn.microsoft.com/en-us/training/modules/network-fundamentals-2/
+https://learn.microsoft.com/en-us/training/paths/implement-network-security/
+https://learn.microsoft.com/en-us/training/modules/introduction-azure-ddos-protection/2-what-is-azure-ddos-protection
+https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-phishing-protection-spoofing-about?view=o365-worldwide
+https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-sstp/4a6778bc-a4a9-46c6-9120-7493c61f95e5
+https://learn.microsoft.com/en-us/azure/sentinel/overview
 
 
 
