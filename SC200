@@ -776,6 +776,125 @@ Network administrators should regularly update software, perform vulnerability a
 Finally, it's crucial to educate the users in your network because human error is often considered the main weak link in a network
 
 
+---- firewall
+
+a firewall is a network security device that sits between a trusted and untrusted network, such as the Internet.
+You can compare it to a country's border control. In the same way, officials check people to ensure they aren't carrying anything that 
+isn't allowed in and out of the country, firewalls analyze all incoming and outgoing traffic. 
+
+By default, most firewalls deny all incoming traffic and filter outgoing traffic until an organization security team configures what traffic should be allowed in and out. 
+The firewall checks each data packet to determine if certain conditions are met before it allows traffic to pass through. These conditions could be; 
+a specified IP address, a network port, a network protocol or a combination of conditions.
+
+Some firewalls are hardware-based and are inside devices built to act as firewalls. Firewalls can also be virtualized to run on a server.
+Other firewalls are software programs that run on personal computers or even inside routers
+
+Firewalls have to check every packet of data that arrives against a list of rules to decide if the packet is permitted or denied. 
+This can be very time-consuming and counterproductive, slowing the network down. When it comes to a network and its firewall, some decisions need to be made.
+One, what traffic needs to be checked and two, where does it need to be checked? In other words, where's the best place to put border controls in a network? 
+Security teams make these decisions by assessing the risk that different network devices or zones carry. A zone is made up of a single device or devices with the same trust level. 
+These devices can be physically remote from one another on the network or they can be close by. But as long as they all share the same trust level, they're in the same zone. 
+The trust level is assigned on a scale of 0-100. The higher the number, the higher the level of trust and the firewall acts according to what zone traffic is going to or coming from. 
+
+Here's an example of a network with three zones; private, public, and perimeter, which are very typical for many networks today. 
+A trusted or private zone has resources and devices that should never be accessible to anyone outside of an organization.
+A firewall will block all incoming traffic. Examples include printers, workstations used by internal users and internal servers. These are typically assigned the highest trust value of 100. 
+Zones with a high number require more protection than others. But it also means that the firewall won't check outgoing traffic as rigorously as for other zones. 
+The perimeter zone, also known as DMZ or demilitarized zone, is where resources and services accessible from outside the organization are available. 
+For example, you can use a perimeter network to provide access to an application, a partnering organization or a supplier. 
+This zone is typically assigned the value of 50. Not all incoming traffic will need to be checked, but it's still treated with a lot of caution. A public zone contains everything outside the organization. 
+This zone is part of the internet or another network and is not under the organization's control. It carries the most risk. It has a trust level of zero. In other words, everything coming in needs to be checked. 
+Dividing a network up into these three different zones helps security teams to know which part of the network requires the most protection and where traffic should be checked most rigorously. 
+
+
+The first type of firewall was just a packet filtering firewall. In other words, a device that simply checks where a packet came from, where it's going, and what kind of protocol it has.
+
+But attacks can be hidden in packet data, within the payload itself, so firewalls have had to evolve to check the inside of packets as well.
+This evolution has led to the development of different types of firewalls that can perform specific functions, for example:
+
+>>Packet filtering firewalls inspect each data packet as it travels through the network. They decide whether to block a specific packet based on the configured rules.
+>>Application layer firewalls can be a physical device that uses its own hardware or software installed on another machine, such as a plug-in or a filter. 
+These types of firewalls target applications and monitor their behavior. For example, if placed in front of a Web server, they can inspect requests for HTTP connections and block abnormal floods of traffic that indicate a DOS attack.
+>>Circuit-level firewalls check whether TCP and UDP connections on a network are valid before exchanging data. 
+For example, this type of firewall may first check whether the source and destination addresses, user, time, and date meet certain defined rules. Data is exchanged between parties without further investigation when these checks are passed and a session is started.
+>>Proxy server firewalls control information entering and leaving a network. 
+This capability means that the server can monitor, filter, and cache data requests to and from a network. Firewalled proxy servers provide secure Internet access to all devices on a network.
+
+A stateless system sends a request to the server and relays the response (or the state) back without storing any information. 
+On the other hand, stateful systems expect a response, track information, and resend the request if no response is received
+
+Stateful firewalls inspect connections on a network. As traffic reaches the firewall, it monitors all packets that pass through it and stores a combination of information about the packets in a state table. 
+The state table tracks sessions by recording port numbers as sessions are initiated within the network and transmitted outside the network.
+Collecting this information helps the firewall recognize what legitimate traffic with the correct port numbers should look like when returning, thus allowing legitimate responses to return to the network.
+
+
+Firewall rules
+
+Wherever the firewall is placed, the rules that make up the policy determine what is and is not allowed to enter or leave a network.
+
+Rules are created using a list of elements that the firewall can check. These elements include:
+
+Source address - where the data came from. Typically this is an IP address, but it can also be a fully qualified domain name or FQDN. An FQDN is the name of a device on the Internet, verified by an external DNS server.
+Destination address - where the data is going. This is usually an IP address, but can also be a fully qualified domain name (FQDN).
+Port and protocol numbers - the services that applications require.
+Interface -rules can be associated with a specific interface or port on a firewall.
+Direction - whether the traffic is inbound or outbound.
+Time - Specifies when data will or will not be allowed.
+The decision - whether the packet should be allowed or denied.
+
+When creating firewall protocols, it is important to remember the following three rules:
+
+Top-down processing - A firewall starts at the top of a list of policies and works its way to the bottom, so the order of the rules is critical.
+
+Matching rule - If any incoming traffic matches the criteria of a firewall rule, the firewall applies the specified allow or deny action without moving on to the next rule. 
+All other rules below the corresponding rule will not be considered because firewalls implement top-down processing.
+
+Implicit deny - also known as deny everything. Typically, this is an invisible rule applied when a firewall is initially configured and blocks all traffic from the start. 
+It allows a firewall to protect the network as soon as it is activated. This rule remains active at all times, so many firewall policies have allow statements (also known as allow statements) 
+to allow necessary traffic to pass through. Implicit negation is always the last rule in the list of rules. And since it's active by default and invisible, it's important to remember that it's there.
+
+The implicit deny rule is always present at the bottom of the list of rules. This means that the network is protected from all traffic until more rules are added to allow other types of traffic, 
+such as web traffic and email communication, for example.
+
+
+Microsoft Sentinel with a huge range of products from Microsoft 365 Defender to Microsoft for Cloud Apps. Your endpoints, identity, applications, data, infrastructure, and network are all protected.
+Sentinel measures this by collecting data at Cloud-scale across all users, devices, applications, and infrastructure, both on-premises and in multiple Clouds. 
+Detecting previously undetected threats using Microsoft's analytics and unparalleled threat intelligence. Investigating threats with artificial intelligence, 
+and hunting for suspicious activities at scale by tapping into years of cybersecurity experience at Microsoft. And responding to incidents rapidly with built-in orchestration and automation of common tasks.
+
+ if you only have a few vulnerable areas in your network, Microsoft Defender might be a better choice as it focuses on critical areas.
+
+ Microsoft Defender for Endpoint is a good choice. This product can help look after existing endpoints. And scans for new endpoints as they are added to the network, thus giving some level of protection straightaway. 
+
+Insider attacks
+A simple click on a link can grant internal access to an attacker. A firewall cannot prevent this attack, as it comes from what appears to be a trusted source. 
+Better security policies and education are needed in this case.
+A malicious insider attack is an attack carried out by a user with access to the network who collaborates with an external party. The attack exposes the firewall because internal network access is trusted. 
+To better protect the network, network segmentation should be implemented to filter access to sensitive areas.
+
+Network analysis: Identifying threats
+Penetration testing
+Continuous monitoring - firewalls and tools such as Microsoft Sentinel can send threat alerts from several different sources on the network.
+
+
+you will need good change control procedures to reduce the most significant risk to firewalls: misconfiguration!!!
+
+Changing a rule in a firewall can prevent something from working or even allow some completely new and unknown risks to pass through the firewall. 
+This is why testing a new rule in a test environment separate from the network is so important and helps minimize risks. 
+This can be difficult for a small company, so having a good rollback plan is just as important. If something happens that shouldn't, the rollback plan allows you to undo the changes.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
