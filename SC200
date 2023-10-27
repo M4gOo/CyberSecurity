@@ -1,4 +1,4 @@
-
+https://www.figma.com/
 https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWREfA
 
 Cybersecurity protects your digital information, devices and assets, such as your bank accounts, files, or even photos. System protection is equally important. 
@@ -891,11 +891,41 @@ https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-sstp/4a6778bc-a
 https://learn.microsoft.com/en-us/azure/sentinel/overview
 
 
+------------ virtualization
+
+But how exactly is virtualization done? In a virtualized environment, a software program called a hypervisor is installed in a computer. 
+The hypervisor creates virtual versions of the physical resources, such as virtual CPUs, memory, and storage. 
+Hypervisors are the core of Virtualization Technology because they provide the foundation for creating and managing virtual machines or VMs.
+
+Type 1 and type 2. Type 1 hypervisors, also known as bare-metal hypervisors, are installed directly on the host machine's hardware. 
+This enables the hypervisor to efficiently create and manage virtual machines without requiring a separate operating system. 
+Type 1 hypervisors are often used in data centers and enterprise level environments because they offer better security and isolation than type 2 hypervisors. 
+Examples of type 1 hypervisors include VMware, ESXI, Microsoft Hyper V and Citrix Xen server. 
+Type 2 hypervisors or hosted hypervisors, on the other hand, run on top of a host operating system. 
+These hypervisors are typically used for desktop virtualization, testing environments and personal use. Examples of type 2 hypervisors include Oracle VirtualBox, VMware, Workstation and Parallels Desktop.
 
 
+--------  How Virtual Machines and Containers Can Help with Networking and Security Testing
+Virtual machines and containers are powerful tools for networking professionals to simulate and experiment with virtual networks, infrastructure, and security tools in an isolated environment.
 
+By creating virtual machines, you can simulate and experiment with different network configurations and protocols. 
+Virtual machines can create a virtual network with multiple subnets, routers, switches and servers and test the communication process between different devices. 
+This is useful for testing different network configurations and protocols and ensuring your network is optimized for performance and security.
 
+Virtualization can also simulate an entire infrastructure, including servers, databases, applications, and services. 
+By creating multiple virtual machines and configuring them to work together, you can create a complete infrastructure that can be used for testing and development purposes. 
+This is useful for testing new software versions, security patches, and updates in a controlled environment before deploying them to production.
 
+Virtual machines and containers can also run network security tools in isolation. By running security tools in a virtual environment, you can isolate them from the host machine 
+and other applications, reducing the risk of damage and security risks exposed to the outside world. This is useful for testing the effectiveness of different security tools, 
+such as intrusion detection systems (IDS) and web application firewalls (WAF), against various types of attacks.
+
+Another way to learn how virtual machines can be used for security testing is to create honeypots. A honeypot is a virtual machine or network intentionally designed to attract attackers. 
+Creating a virtual machine that looks like a vulnerable system or service can attract attackers and gather information about their tactics and techniques. 
+You can also simulate network attacks, such as denial of service attacks or malware infections, and test your network's resilience against these threats.
+
+Virtual machines and containers can be used to test the security of your own network. To simulate network attacks, you can use tools like Kali Linux, 
+a popular Linux distribution designed specifically for penetration testing and digital forensics.
 
 
 
