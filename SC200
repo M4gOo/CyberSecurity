@@ -993,9 +993,131 @@ Identity and infrastructure
 
 
 
+===========    Cybersecurity Threat Vectors and Mitigation   ===================
+
+https://www.microsoft.com/en/security/business/security-101/what-is-cybersecurity
+https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5bUvv?culture=en-us&country=us
+https://www.microsoft.com/en-us/security/business/security-101/what-is-a-cyberattack
+
+
+What is WannaCry?
+The WannaCry ransomware attack was a global incident that caused substantial damage in May 2017.
+The attack targeted the Microsoft Windows operating system, exploiting a vulnerability known as EternalBlue. 
+After infecting a machine, it would encrypt the data and demand payment in cryptocurrency for the data to be restored.
+
+hackers used a vulnerability in Microsoft's Server Message Block or SMB protocol, which is used for file sharing.
+The hackers behind WannaCry were able to use EternalBlue to spread ransomware from one system to another very quickly.
+
+WannaCry was diagnosed by a 22-year-old cybersecurity researcher named Marcus Hutchins, who discovered a kill switch in the code. 
+he kill switch was surprisingly simple as it was just a domain name. WannaCry was designed in such a way that if it could contact that domain name of the affected computer, 
+it would stop encrypting the files on that system. Therefore, no additional damage would be done to that computer if the ransomware was able to communicate with that domain.
+
+That domain name was iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com.
+
+The incident highlighted the importance of proactive measures to protect against cyber threats, including implementing robust security protocols and ensuring regular data backups.
+
+
+Stuxnet Worm
+Worms are a type of malware that cause disruption to computer systems. They are self-replicating and spread across networks, exploiting security and software vulnerabilities. 
+Unlike viruses, which need host files or programs to attach, worms can spread through various means, such as
+
+email attachments,
+text messages,
+file sharing programs,
+social networking sites,
+network shares and
+removable drives.
+
+Typically, worms spread by exploiting vulnerabilities in operating systems and software applications to gain access to computer systems. 
+Once they gain access, they copy themselves to any other computer that is on the network.
+
+Worms can exploit weaknesses in operating systems or applications to infect computers. After infecting a system, worms look for vulnerabilities, infect the target, and repeat this process, allowing them to spread quickly.
+
+Worms can also copy themselves onto removable USB drives, allowing them to spread to any system the drives are plugged into. This is an easy way for worms to move between systems that are not connected to a main network.
+
+It is also common for worms to trick users into clicking malicious links or downloading and executing infected email attachments. 
+This often occurs when users receive fake messages that appear to come from a legitimate source.
+When the user opens the attachment, the worm is activated, infecting their system and spreading to other devices on the network.
+
+Another method used by cyber criminals is cracked software, often called pirated software. 
+This poses a significant risk to users looking to bypass licensing restrictions and obtain software for free or at a reduced cost.
+
+However, when software is cracked, its original code is altered to bypass licensing and copyright protection mechanisms.
+
+Stuxnet stands out as the malware that altered the world's perceptions of cybersecurity. It was designed with unprecedented sophistication and precision. 
+It not only targeted computer systems but also caused physical damage to essential infrastructure.
+
+Stuxnet's primary target was Iran's nuclear program. It specifically targeted the uranium enrichment centrifuges at the Natanz facility. 
+When the worm infiltrated the industrial control systems (ICS) that managed these centrifuges, it manipulated their operating parameters, causing them to malfunction and ultimately break down.
+
+Stuxnet manipulated multiple zero-day vulnerabilities in the Windows operating system to infiltrate its target systems, demonstrating an enormous level of technical sophistication. 
+These manipulated vulnerabilities allowed the worm to spread undetected and even gain administrative privileges. This allowed it to execute its payload unnoticed.
+
+Stuxnet's modular design allowed it to adapt to various environments and avoid detection by antivirus software. Its payload was created specifically to target supervisory control and data acquisition (SCADA) systems
 
 
 
+A Trojan is a special type of malware that can disguise itself as a legitimate file or piece of software. It does this to trick you into downloading and installing it. 
+Once the Trojan is installed, the attacker can remotely manipulate your system, allowing them to steal important data and get access to the data or applications on your computer. 
+Trojans can even work as key loggers, reading keystrokes and stealing login credentials or credit card information. Unlike viruses, Trojans can't replicate on their own.
+Trojans are typically delivered through phishing emails, malicious downloads, or compromised websites. Since Trojans can't replicate like viruses, they are easier to detect and remove.
+
+a virus is a type of malware that infects files or programs, computer systems. It can even spread to other computers through network connections, email, or infected files. 
+Unlike Trojans, which needs to be physically installed by a user, a computer virus can replicate and spread itself rapidly once it is infected your machine. 
+A virus can be delivered through email attachments, infected software downloads, or malicious websites. 
+Viruses are often more difficult to detect and remove, as they can hide in system files and continue to spread to other devices.
+
+Unlike viruses and Trojans, worms don't have to attach themselves to a program or file to infect your system. 
+Instead, they can take advantage of vulnerabilities in your operating system and spread from computer to computer, causing considerable damage to your system and network. 
+However, just like Trojans, worms can create backdoors to your system, allowing attackers to gain unauthorized access or launch other types of attacks. 
+measures you can take to protect your systems and networks against worms, including making sure your operating system and antivirus software has kept up-to-date and don't forget to run regular scans. 
+
+Don't open them unless you're certain they're safe. You should also avoid suspicious websites, especially those that offer free downloads, adult contents, or pirated software. 
+Try enabling the pop-up blocker in your browser. This blocks unwanted pop-ups which can contain Trojans or viruses. 
+Finally, keep yourself up-to-date with the latest information. Stay knowledgeable on the latest threats and educate yourself on how to protect your device from Trojans and viruses.
+
+
+A data breach occurs when information is stolen or extracted from a device without the knowledge or permission of the system owner.
+
+This may include:
+personal information,
+financial data and
+confidential business information.
+
+From a cybersecurity perspective, data breaches pose a serious threat; they can result in financial losses, reputational damage and loss of trust.
+
+Data breaches occur in many ways, whether through hacking, malware, social engineering, or even human error.
+
+https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/
+https://learn.microsoft.com/en-us/training/modules/introduction-to-threat-vectors-data-breaches/3-examine-how-phishing-retrieves-sensitive-information
+https://learn.microsoft.com/id-id/microsoft-365/security/defender/?view=o365-worldwide
+
+
+===================  threat vectors  ============================
+
+Threat actors, like hackers, use malicious code to deliver viruses to their victims.
+Threat actors represent human beings who use different entry points to gain unauthorized access to computer systems.
+These entry points, known as threat vectors, include malicious URLs, USB storage with malware, and phishing emails.
+
+
+ A threat actor is the individual or group that engages in malicious activity that compromises the security of computer systems networks or other digital assets. 
+Threat actors use a threat vector to gain unauthorized access to your system. 
+So, a threat vector is the entry point for attackers to gain access to a system or organization
+
+
+ watering hole attack
+This is another primary threat vector that involves malicious websites or downloads. 
+This attack involves purposefully injecting a website with malware that employees of a specific organization are known to visit frequently.
+These tactics compromise user systems by exploiting vulnerabilities in the organization's web browsers. 
+
+Zero day vulnerabilities refers to previously unknown flaws in software or hardware. Which can be exploited by attackers before developers have a chance to release a patch
+
+Internet of things devices, such as your smart home appliances and wearables.
+Lack of adequate security measures, default passwords or poorly configured systems can make them threat vectors. 
+
+mobile devices including your cell phone or tablet, could be targeted through malicious apps. 
+
+Smishing known as SMS phishing or phishing. Also referred to as voice phishing, an. An exploitation of Bluetooth or WiFi vulnerabilities. 
 
 
 
