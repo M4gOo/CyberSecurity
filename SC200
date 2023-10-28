@@ -928,10 +928,68 @@ Virtual machines and containers can be used to test the security of your own net
 a popular Linux distribution designed specifically for penetration testing and digital forensics.
 
 
+-=------------------ XaaS     https://www.techtarget.com/searchnetworking/feature/What-cloud-data-center-interconnect-technologies-can-do
 
 
+uses a private connection between your on-premises network and Microsoft clouds to better interconnect XaaS services.
+https://learn.microsoft.com/en-us/training/modules/intro-to-azure-expressroute/2-what-is-azure-expressroute
+
+Software as a Service (SaaS)
+SaaS allows users to connect and use cloud-based applications over the Internet. SaaS applications are also known as hosted applications. 
+In general, with SaaS, users don't install any software. They connect through a browser and use hosted software.
+Examples of SaaS include video-on-demand platforms like Netflix, Microsoft 365, and apps like Spotify. In fact, most applications that allow end users to make time-based subscriptions are examples of SaaS.
 
 
+To help you identify a SaaS application or service, you can ask yourself these four questions, 
+is the application managed from a central location? 
+Is it hosted remotely? 
+Is it accessible over the Internet? 
+And is the provider responsible for the maintenance?
+If the answers to these questions are yes, it's most likely SaaS.
+
+
+Platform as a Service (PaaS)
+PaaS is a complete development and deployment environment in the cloud. Developers and software companies use PaaS to quickly and easily create and publish new programs or 
+applications without having to take care of the necessary infrastructure.
+PaaS capabilities allow developers to deliver everything from simple cloud-based applications to sophisticated, cloud-enabled enterprise applications. Developers can acquire the features they need from a
+cloud service provider on a pay-as-you-go basis and access them via a secure internet connection.
+Examples of PaaS include: Microsoft Azure, AWS lambda, and Google app engine.
+
+Reduce coding time. PaaS development tools can reduce the time required to code new applications with pre-coded application components built into the platform, 
+such as workflow, directory services, security features, search, and so on.
+
+Add development resources without expanding your team. PaaS solutions provide development teams with new capabilities while reducing the need for additional staff with specialized skills.
+
+Easily develop for multiple platforms. Typically, PaaS offers development options for multiple platforms such as computers, mobile devices, and browsers, making cross-platform app development faster and easier.
+
+Use sophisticated tools cost-effectively. A pay-as-you-go model allows individuals or organizations to use sophisticated development software, business intelligence,
+and analytical tools that they cannot purchase outright.
+
+Support geographically distributed development teams. Because the PaaS development environment allows users to connect over the Internet, development teams can work together 
+on projects even when team members are in remote locations.
+
+Efficiently manage the application lifecycle. PaaS solutions provide all the capabilities you need to support the complete web application lifecycle: build, test, deploy, 
+manage, and update in the same integrated environment.
+
+
+Infrastructure as a Service (IaaS)
+IaaS is a type of cloud computing service that offers computing, storage, and networking resources on demand. 
+IaaS offerings enable organizations to eliminate the cost and complexity of purchasing and managing physical servers and data center infrastructure. 
+Organizations pay for each resource for as long as it is needed on a pay-as-you-go basis. A cloud computing service provider like the Microsoft Azure
+manages the infrastructure, while the customer purchases, installs, configures and manages their own software, including operating systems and applications.
+
+The difference between IaaS and PaaS is that IaaS allows you to manage the operating system and determine the power of the infrastructure you use. 
+This could be a better performing CPU or faster storage. This is useful when certain applications require a custom operating system to run efficiently. 
+For example, some websites need a high-performance infrastructure to handle very high volumes of requests. 
+On the other hand, with PaaS, the infrastructure and operating system are determined by the platform provider.
+
+
+Your service model will determine responsibility for things like:
+
+Operational systems
+Network Controls
+Applications
+Identity and infrastructure
 
 
 
