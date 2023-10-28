@@ -1106,8 +1106,8 @@ So, a threat vector is the entry point for attackers to gain access to a system 
 
 
  watering hole attack
-This is another primary threat vector that involves malicious websites or downloads. 
-This attack involves purposefully injecting a website with malware that employees of a specific organization are known to visit frequently.
+This is another primary threat vector that involves malicious websites or downloads 
+This attack involves purposefully injecting a website with malware that employees of a specific organization are known to visit frequently and redirecting them to malicious websites without their knowledge.
 These tactics compromise user systems by exploiting vulnerabilities in the organization's web browsers. 
 
 Zero day vulnerabilities refers to previously unknown flaws in software or hardware. Which can be exploited by attackers before developers have a chance to release a patch
@@ -1118,6 +1118,65 @@ Lack of adequate security measures, default passwords or poorly configured syste
 mobile devices including your cell phone or tablet, could be targeted through malicious apps. 
 
 Smishing known as SMS phishing or phishing. Also referred to as voice phishing, an. An exploitation of Bluetooth or WiFi vulnerabilities. 
+
+
+Macros are a powerful method of automating common tasks and improving productivity within Microsoft Office
+, cybercriminals also use macro malware functionality to infect your device. Delivered via an email attachment or zip file, the macro works by hiding in your Microsoft Office files. 
+The email attachments uses names intended to entice or scare you into opening them.
+
+ rootkits, which cybercriminals use to hide malware inside your device. This allows the malware to possibly remain undetected for years, allowing it to steal your information and resources. 
+Rootkits can also intercept and change standard operating system processes and adjust system reports to evade detection. 
+
+fileless malware, which is unique because it functions without installing malware or other programs on your computer's hard drive. 
+Instead, fileless malware makes use of existing programs or tools already installed in your computer. This method makes it challenging for antivirus software to locate it. 
+
+Microsoft data shows that the energy sector is one of the most targeted sectors for ransomware, as well as the financial, health care, and entertainment industries.
+
+
+Metamorphic malware works in a similar way, continually changing its code and maintaining the same functionality.
+It does this by using obfuscation techniques to alter your code. Metamorphic malware can rearrange blocks of code, insert unwanted code, rename variables, and more, 
+all to generate a new variant of itself that looks different on the surface but does the same thing.
+
+Because metamorphic malware is constantly changing its code, it is difficult for traditional detection methods to detect it. 
+This obfuscation makes it difficult and requires a lot of time, skill, and effort to inspect these malware programs and raises the bar for analyzing new threats. 
+Researchers have turned to heuristic and behavioral analysis to identify these shape-shifting threats, which remains a challenge.
+
+Heuristic analysis 
+is based on previously established rules to determine whether something is a threat or not. Analysis takes advantage of all previous analysis or experience.
+
+behavioral analysis 
+which examines the purpose of a file and can determine whether that purpose is a threat or not. 
+If a file is studied and its only function is to exclude other files, this behavior corresponds to that of a virus, the file can be isolated and an alert can be triggered.
+
+Just like metamorphic malware, polymorphic malware also changes its code to avoid detection. But instead of obfuscating itself, polymorphic malware encrypts its malicious code after infecting a system. 
+It carries its encrypted code along with a decryption module to unlock it. You can think of it as a chameleon, which can quickly change the color and pattern of its skin to suit its surroundings. 
+Likewise, by generating a new encryption mechanism with each infection, polymorphic malware alters its code so that it constantly changes to match its environment, which allows it to hide in plain sight.
+
+To avoid detection and maintain their command and control infrastructure, attackers often use fast flow techniques or DGA (Domain Generation Algorithms). 
+Fast flow involves rapidly changing IP addresses associated with malicious domains, while DGA generates a large number of domain names to establish communication channels. 
+Both techniques make it difficult for security solutions to identify and block malicious traffic.
+
+
+Signature-based detection alone is not effective against these ever-changing threats. Heuristic and behavioral analysis helps identify malware even when its appearance is changing. 
+Machine learning and neural networks can also learn the patterns of metamorphic and polymorphic malware to detect even its most advanced variants.
+
+Some software solutions, such as antivirus software, are designed to scan, detect, and remove known viruses, worms, and other types of malware from computer systems.
+
+There is also anti-malware software, which detects and removes malicious software, including Trojans, spyware, adware, and ransomware.
+
+Email security solutions are also available and are designed to protect organizations and individuals against email-based threats such as phishing, spear-phishing, 
+and malware delivered through email attachments or links.
+
+Organizations must make sure they have solid security policies in place. These policies must include:
+Strong passwords and multi-factor authentication (MFA).
+Robust security solutions such as firewalls and specialized detection software.
+Mandatory software security updates.
+
+
+https://www.statista.com/statistics/494947/ransomware-attempts-per-year-worldwide/
+https://www.statista.com/statistics/700965/leading-cause-of-ransomware-infection/
+
+
 
 
 
