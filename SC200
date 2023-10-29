@@ -1318,6 +1318,284 @@ Physically destroy storage: If you are disposing of a hard drive, SSD, CD, or US
 
 
 
+============== encryption ================
+
+
+encryption is the process of encoding a message or data so that only authorised parties with the right key can access it. 
+encryption is asymmetric encryption. Unlike symmetric encryption, which relies on a single shared key for encryption and decryption, asymmetric encryption uses a pair of keys. 
+This pair consists of a public key and a private key. 
+The public key is responsible for encrypting the message and can be shared with anyone, while the private key is responsible for decryption and must be kept secret
+
+Many other types of encryption techniques are also used in modern day cryptography, such as hash functions, digital signatures and key exchange protocols.
+These techniques are used to protect data and communications in a variety of different scenarios, from securing online banking transactions to protecting military communications.
+
+
+Data Encryption Standard (DES)
+In the 1970s, the Data Encryption Standard (DES) was developed by the US government to provide secure communication between its agencies. DES used a 56-bit key
+
+Advanced Encryption Standard (AES)
+To address this vulnerability, the Advanced Encryption Standard (AES) was developed in the late 1990s. AES is a symmetric encryption algorithm, meaning that the same key is used to encrypt and decrypt data. 
+It divides data into smaller blocks of 128 bits and encrypts each block separately with a key size of 128, 192, or 256 bits, a technique known as a block cipher. 
+AES is considered one of the most secure encryption algorithms in use today.
+
+To understand how AES works, let's say Sam has a recipe for his famous ice cream that he wants to keep secret. Sam uses AES to encrypt his recipe. First, the revenue is divided into blocks of a fixed size. 
+Then each block is encrypted using a key. This means that Sam's income is divided into thousands of individually encrypted blocks that are then put together and encrypted as a whole. 
+The key is a secret code that is used to encrypt and decrypt data. Only Sam has the key to decrypt the recipe. This ensures that your recipe remains a secret.
+
+Public key cryptography
+In traditional symmetric key encryption, both the sender and receiver must have access to the same key. However, with public key cryptography, each user has a public and a private key. 
+The public key can be shared with anyone, while the private key is kept secret. This allows secure communication without the need to share a secret key.
+
+
+RSA encryption is based on mathematical functions with large prime numbers, which makes it almost impossible to break. It uses two keys, one public and one private, to encrypt and decrypt data. 
+The public key can be distributed to anyone who wants to send encrypted data, and the private key is kept secret by the recipient. 
+RSA encryption is widely used in digital signatures, secure email, and other applications that require secure communication.
+
+To understand how RSA encryption works, let's consider Sam's Scoops once again. Sam wants to send a secret message to his business partner, Sally. Sam uses RSA encryption to encrypt the message, generating a public and private key pair. 
+Sam shares the public key with Sally, who uses it to encrypt her response to Sam. Then Sam uses his private key to decrypt Sally's response.
+
+
+Secure Sockets layer (SSL) and Transport Layer Security (TLS)
+In addition to traditional encryption methods, the development of the Internet has led to the creation of new encryption protocols, such as SSL/TLS. SSL (Secure Sockets Layer) was developed by Netscape in the 1990s 
+as a way to secure online transactions. It was later replaced by TLS (Transport Layer Security), which is used to secure communication between web servers and clients. SSL/TLS is used in a wide range of applications, 
+including online banking, e-commerce, and email. SSL/TLS uses a combination of symmetric and asymmetric encryption to provide secure communication between two parties.
+Asymmetric encryption is used to establish a secure channel, and symmetric encryption is used to encrypt data that is transmitted over the channel.
+
+For example, imagine that Sam wants to create an online store to sell his products. To ensure the security of his customers' transactions and confidential information, Sam uses SSL/TLS to protect his online store:
+
+When a customer visits Sam's online store, their browser initiates a connection to Sam's server.
+
+Then the server sends your SSL/TLS certificate to the browser.
+
+The browser checks the certificate and, if it is valid, a secure connection is established between the browser and the server.
+
+All data exchanged between the browser and the server is encrypted, ensuring that it cannot be intercepted by an attacker.
+
+
+Elliptical Curve Cryptography, or ECC. ECC is a type of public key encryption that is based on the mathematical theory of elliptical curves and uses smaller, faster, and more efficient keys. 
+Instead of multiplying large prime numbers like traditional methods, ECC uses an elliptical curve equation to link two separate keys to encrypt and decrypt data. One is a public key and the other is private. 
+This approach offers a higher level of security because the private key cannot be derived from the public key. ECC is an alternative to the RSA cryptographic algorithm and is widely used in cryptocurrencies such as, 
+Bitcoin and Ethereum.
+And because it is so efficient, it works well for wireless communication and the Internet of Things. 
+
+ AES can be challenging when multiple parties are involved. RSA's complexity can slow down the encryption process, and while 
+ECC offers a higher level of security, its complexity makes it vulnerable to implementation errors
+
+Key management practices involve procedures for generating, distributing, storing, and revoking encryption keys. And ensures that only authorized parties have access to them. 
+This is essential for maintaining the confidentiality and integrity of encrypted data. One of the most popular key management practices is the use of key exchanges.
+Key exchanges allow for the secure distribution of encryption keys between parties without the need to share the key itself. A popular key exchange protocol is the Diffie-Hellman Protocol. 
+Which allows two parties to independently generate shared secret keys without actually sharing the key itself. 
+This protocol is commonly used in secure communications and e-commerce transactions.
+When it comes to choosing the right encryption technology, various fact such as the level of security required, the size of the data, and the number of parties involved need to be taken into account. 
+Symmetric encryption methods like AES provide fast and efficient encryption. While asymmetric encryption methods like RSA and ECC offer more versatility and security for multiple parties.
+
+
+Pretty Good Privacy (PGP)
+PGP is a widely used encryption tool that allows the secure transmission of sensitive information, such as emails and text messages, through end-to-end encryption. 
+It uses a combination of symmetric-key and public-key cryptography to ensure that only the sender and recipient can access the message content.
+PGP offers an intuitive interface that allows users to encrypt and sign their emails and messages. The sender encrypts the email message with the recipient's public key, 
+and the recipient decrypts the message with their private key.
+PGP uses a digital signature to verify the sender's identity, ensuring that the message has not been tampered with. Additionally, PGP can also encrypt files and folders to increase security.
+
+Bitlocker and FileVault
+Bitlocker and FileVault are encryption tools used to protect data on Windows and macOS operating systems. These tools encrypt the entire hard drive, including the operating system and all user data. 
+This ensures that even if the computer is lost or stolen, the data cannot be accessed without the appropriate decryption key.
+Bitlocker uses the Advanced Encryption Standard (AES) algorithm to protect data. FileVault is a similar encryption tool built into Mac OS.
+
+
+VeraCrypt/TrueCrypt
+VeraCrypt and TrueCrypt are open source encryption tools that can be used to encrypt individual files or entire disks. They use several encryption algorithms, including AES. 
+VeraCrypt and TrueCrypt also offer plausible deniability, meaning encrypted data can be hidden in plain sight, making it harder for attackers to find and access it.
+
+VeraCrypt and TrueCrypt are encryption tools used to create encrypted containers, which are files that can store encrypted data.
+These containers can be mounted as virtual drives and the data can only be accessed with the appropriate decryption key. 
+One of the advantages of using VeraCrypt and TrueCrypt is that they are open source software, which means they are free to use and can be audited by security experts to ensure their security.
+
+End-to-end encrypted messages
+End-to-end encryption is a security protocol that ensures that only the sender and recipient can read the message. It uses a key-based system similar to PGP. 
+Popular messaging apps like WhatsApp, Signal, and Telegram use end-to-end encryption to protect their users' messages.
+
+End-to-end encrypted messages are considered highly secure as messages are encrypted on the sender's device and can only be decrypted by the intended recipient's device.
+
+https://learn.microsoft.com/en-us/dotnet/standard/security/encrypting-data
+https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/
+https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/vpn/vpn-connection-type
+https://learn.microsoft.com/en-us/training/modules/intro-to-blockchain/
+
+
+-----------  symmetric key encryption  
+
+how are these keys created? Private keys are created by generating a sequence of bits, or 1s and 0s, that serve as the key itself.
+Once generated, the private key is used to encrypt the data, and only the same private key can decrypt the encrypted data. 
+
+AES, is a widely used symmetric key encryption algorithm. It operates as a block cipher, dividing data into fixed sized blocks of 128 bits.
+The encryption process involves applying a series of mathematical operations, known as rounds, to the input data. 
+The number of rounds depends on the key size, for instance, 10 rounds for 128 bit keys, 12 rounds for 192 bit keys, and 14 rounds for 256 bit keys.
+
+ A larger key size generally provides greater security, making it harder for cyber criminals to crack the code. 
+However, it's essential to note that the larger key sizes may result in slower encryption and decryption times. 
+
+AES operates in various modes, each with its unique characteristics and strengths.
+
+electronic codebook, or ECB, is the simplest and most straightforward mode. In this mode, data is divided into blocks, and each block is encrypted independently, however, this simplicity comes with the downfall. 
+ECB can be vulnerable to certain attacks, making it the least secure option.
+
+ cipher block chaining, or CBC, encrypts each block of data using the previous block cipher text, creating a chain of interconnected blocks. 
+This creates an extra layer of protection, making it more secure and commonly used in situations where confidentiality is very important. 
+
+symmetric key encryption algorithm Blowfish. Blowfish is a symmetric key encryption algorithm designed by Bruce Schneier in 1993. Just like AES, Blowfish is a block cipher that operates in both ECB and CBC modes
+ One standout feature of Blowfish is its flexible key size. With Blowfish, you can use variable-length keys ranging between 32 and 448 bits, 
+making it a more efficient solution for scenarios that require swift encryption and decryption. 
+While Blowfish is ideal for fast encryption, it's important to note that alternative methods like AES may be more suitable in situations where a high level of security is required. 
+
+
+------------- key management
+
+One solution to address the key management challenges is the use of hardware security modules.
+Hardware security modules are physical devices specifically designed to provide secure key storage and cryptographic operations. 
+Their tamper resistant properties make them resilient to physical attacks such as drilling, cutting, or heating.
+Hardware security modules are commonly used in industries such as finance, healthcare, and government, where the security of cryptographic keys is of utmost importance.
+Another option for storing private keys is to use encrypted key storage services, these services use encryption to protect keys stored on their servers. 
+While access to the keys is typically protected by multi-factor authentication and other security measures. It is also crucial to establish secure backup and storage mechanisms for private keys. 
+Regularly backing up keys helps mitigate the risk of key loss in the event of hardware failure or other unforeseen disasters. 
+However, it is equally important to store the backup securely to prevent unauthorized access
+
+
+AES operating modes
+AES has several modes of operation, which are used to provide different levels of security and performance. 
+The most commonly used mode is Cipher Block Chaining (CBC) mode, which provides encryption and secure description of data blocks. 
+Other modes include Electronic Codebook (ECB) mode, which is used to encrypt small data details, and Counter (CTR) mode, which is used for streaming data.
+
+Another technique used in AES is Galois Counter Mode (GCM), which is a mode of operation for block ciphers. GCM is a combination of Counter mode of encryption and Galois field multiplication.
+GCM guarantees the security and confidentiality of the data being transmitted. GCM is widely used in secure communication protocols such as Transport Layer Security (TLS) and Internet Protocol Security (IPsec).
+
+
+AES Vulnerabilities and Mitigation
+AES has also been subjected to several attacks, which has led to the development of new techniques and variants of the algorithm. 
+One such attack is the side channel attack (SCA), which involves using information obtained from the physical implementation of the algorithm to extract the secret key.
+SCA can be avoided by using techniques such as masking and blinding, which involve adding random values ​​to data during encryption and decryption.
+
+The chosen text attack is another vulnerability that affects AES. In this attack, the attacker can actively select the plaintext to be encrypted and deduce the key using the resulting ciphertext.
+To prevent this attack, AES was modified to use whitening techniques. These techniques involve adding a random value to plaintext before encryption and removing it after decryption. 
+This makes it more difficult for an attacker to discover the key.
+
+AES has also been modified to provide authenticated encryption, which not only ensures confidentiality but also data integrity.
+Authenticated encryption involves using a message authentication code (MAC) to ensure that data has not been tampered with during transmission.
+
+
+--------- asymmetric key encryption 
+
+Public key encryption is used for secure communication over unsecured networks, such as the Internet
+
+There are different types of asymmetric key encryption algorithms such as RSA, Diffie-Hellman, and ECC. As you may recall, 
+RSA is a public key encryption algorithm widely used for secure communication and data transmission over networks.
+
+he RSA algorithm is based on the mathematical properties of prime numbers, generating two large prime numbers, P and Q, and calculating their products. 
+The resulting number is used as the modulus for the encryption and decryption process
+To decrypt the message using RSA, the receiver uses the private modulo as part of an equation that allows the message to be divided by their private key to obtain the original message.
+
+RSA offer several advantages, including security, scalability, and efficiency. However, it also comes with challenges related to key management and performance
+
+RSA key generation
+You must generate the public and private keys before performing the functions to create the ciphertext and plaintext. This process uses specific variables and parameters that are contained in the algorithm.
+The short story is that two very large prime numbers are selected or generated. 
+By multiplying these two numbers, you obtain a number that can be used as a module. This number is vital in both the encryption and decryption process.
+
+RSA encryption process
+The RSA encryption process involves the following steps:
+
+Key generation: The first step in the RSA encryption process is to generate a pair of public and private keys. 
+The public key is shared with anyone who wants to send data securely, while the private key is kept secret by the owner.
+
+Message encryption: To encrypt the message using RSA, the sender uses the receiver's public key to perform the encryption. 
+First, the sender converts the message into a number and then raises it to the modulus power of the receiver's public key. The result is then divided by the exponent of the receiver's public key.
+
+Message transmission: The encrypted message is then transmitted over the network to the receiver.
+
+RSA decryption process
+The RSA decryption process involves the following steps:
+
+Message reception: The receiver receives the encrypted message over the network.
+
+Key generation: The receiver uses his private key to decrypt the message.
+
+Message decryption: To decrypt the message using RSA, the receiver raises the encrypted message to the modulus power of his private key. The result is then divided by the exponent of your private key to get the original message.
+
+
+Disadvantages
+Although the RSA algorithm is widely used and offers many benefits, it is important to be aware of its challenges. These challenges include:
+
+Key management: One of the main disadvantages of the RSA algorithm is the complexity of key management, especially in large organizations. Because RSA is based on large prime numbers, key generation and secure storage can be challenging. 
+Managing a large number of keys can become complicated and requires careful implementation.
+
+Performance impact: Using large keys in the RSA algorithm can significantly affect performance, especially when encrypting or decrypting large messages. 
+The computational complexity of the algorithm increases with larger key sizes, resulting in slower processing times. This may be a concern in situations where time-sensitive operations are required.
+
+Like the RSA algorithm, ECDSA involves generating a public key and a private key. However, unlike the RSA algorithm, ECDSA uses elliptic curves to create the public key and private key. 
+This allows the keys to be much smaller than those used in the RSA algorithm while maintaining the same level of security.
+
+Using smaller keys also means that ECDSA is faster than the RSA algorithm. This makes it suitable for use in applications where speed is important, such as mobile devices and the Internet of Things (IoT).
+
+Despite its advantages, ECDSA is still not as widely used as the RSA algorithm. This is because RSA has been around for much longer and has already been adopted by a wide variety of companies and organizations. 
+However, as the need for greater security and efficiency continues to grow, it is likely that ECDSA will be applied to more and more applications in the future.
+
+
+The Diffie-Hellman algorithm is a key exchange algorithm used to establish a shared secret between two parties over an unsecure communication channel. 
+It is used for sharing the keys for symmetric encryption. The Diffie-Hellman key exchange process involves key generation, key exchange, shared secret generation, and encryption and decryption. 
+The algorithm offers benefits such as security, scalability, and efficiency. 
+However, it is important to be aware of potential vulnerabilities such as man-in-the-middle attacks and challenges related to key distribution. 
+
+ECC, the elliptical curve cryptography algorithm. You may recall that ECC is a public key encryption algorithm that uses elliptical curves over specific fields to perform cryptographic operations.
+The ECC encryption process involves key generation and message encryption. 
+ECC brings advantages such as enhanced security, smaller key sizes, and faster computation. However, like any algorithm, it also has its share of challenges, including key management and patent issues.
+
+
+--------- The formation of digital signatures
+https://support.microsoft.com/en-au/office/introduction-to-digital-signatures-d2f92222-abb1-486b-bc07-884ecac99c59
+https://learn.microsoft.com/en-us/windows-hardware/drivers/install/digital-signatures
+https://support.microsoft.com/en-gb/office/digital-signatures-and-certificates-8186cd15-e7ac-4a16-8597-22bd163e8e96#__toc311530578
+
+ You are electronically sending an important document to a business partner or submitting a confidential form online. 
+How can you know that the document has not been tampered with during transmission? How can you verify its authenticity? This is where digital signatures come into play.
+
+Digital signatures have become increasingly common and essential for authenticating digital documents and ensuring the integrity of the information being exchanged between parties.
+
+
+--------------- hashing
+
+hashing algorithms play a vital role in protecting your sensitive data.
+
+what happens when you enter your password in something like your banking app, social media, or email? 
+How do service providers securely match the password you provide with the one you initially signed up with? 
+And if this information is saved somewhere, like a database, how do they ensure that your password remains out of the reach of malicious actors? Well, this is where hashing comes into play. 
+A powerful technique that transforms your password into a string of characters that's almost impossible to decipher.
+
+Hashing is a process that takes input like your password or any other information and turns it into a fix string of bytes, typically in the form of letters and numbers.
+This output is called a hash or a digest and is unique for each input.
+So even a slight change in the input will result in a completely different hash.
+
+storing passwords as hashes rather than plain text ensures that even if the database is compromised, attackers cannot easily extract the original passwords. 
+But hashing is not limited to password storage. It also plays a crucial role in ensuring data integrity and enabling digital signatures. 
+
+There are different types of hashing algorithms. MD5 is a widely used algorithm that produces a 128-bit hash value, 
+but it is no longer considered secure for sensitive applications due to its vulnerability to collision attacks where two different inputs produce the same hash.
+However, can still be used for noncritical tasks like generating unique IDs or verifying the integrity of non-sensitive files during data transfer. 
+
+SHA256 is extensively used in applications such as digital signatures, password hashing, and blockchain technology. 
+
+even these robust algorithms can be vulnerable to certain types of attacks, such as brute force and dictionary attacks.
+to bolster the security of hash passwords, a technique called salting comes into play. A salt is a randomly generated unique value that is combined with your password before hashing.
+This technique guarantees that even if you and another user share the same password, the respective hashes will be different due to the distinct salts. 
+This mitigates the risk of identifying users with the same password by simply comparing hashes, making it harder for attackers to exploit common or weak passwords. 
+Salts are stored in the database alongside the hashes, which is crucial when you try to log into your account. 
+
+ when you enter your password, the system retrieves the associated salt, which is then combined with the entered password. The resulting value is then hashed and compared to the stored hash.
+
+This approach not only enhances the security of hashes but also prevents attackers from using precomputed hash tables, such as rainbow tables, to crack passwords. 
+By implementing unique salts for each user, the attacker's task of matching hashes become significantly more difficult and time-consuming, as they would have to recompute hash tables for each salt value.
+
+
+
 
 
 
