@@ -1482,6 +1482,7 @@ This makes it more difficult for an attacker to discover the key.
 AES has also been modified to provide authenticated encryption, which not only ensures confidentiality but also data integrity.
 Authenticated encryption involves using a message authentication code (MAC) to ensure that data has not been tampered with during transmission.
 
+https://learn.microsoft.com/en-us/archive/msdn-magazine/2003/november/aes-keeping-your-data-secure-with-advance-encryption-standard
 
 --------- asymmetric key encryption 
 
@@ -1561,9 +1562,15 @@ How can you know that the document has not been tampered with during transmissio
 Digital signatures have become increasingly common and essential for authenticating digital documents and ensuring the integrity of the information being exchanged between parties.
 
 
---------------- hashing
+Digital signatures are used to verify the authenticity and integrity of digital documents or messages, while MACs are used to verify the integrity of data transmitted over a network.
+
+--------------- hashing   https://learn.microsoft.com/en-us/dotnet/standard/security/cryptographic-services
+https://learn.microsoft.com/en-us/azure/machine-learning/component-reference/feature-hashing?view=azureml-api-2
+
 
 hashing algorithms play a vital role in protecting your sensitive data.
+
+Hashing involves converting plain text into a unique, fixed-length sequence of characters known as a hash.
 
 what happens when you enter your password in something like your banking app, social media, or email? 
 How do service providers securely match the password you provide with the one you initially signed up with? 
@@ -1595,9 +1602,43 @@ This approach not only enhances the security of hashes but also prevents attacke
 By implementing unique salts for each user, the attacker's task of matching hashes become significantly more difficult and time-consuming, as they would have to recompute hash tables for each salt value.
 
 
+-------------- Secure Hash Algorithm (SHA)
+
+SHA is a family of cryptographic hash functions developed by the National Security Agency (NSA) of the United States. The most commonly used versions of SHA are SHA-1, SHA-2 and SHA-3.
+
+SHA-1
+SHA-1 generates a 160-bit hash value and has been widely used in the past. However, its use is no longer recommended due to its vulnerability to collision attacks. 
+In a collision attack, two different inputs produce the same hash value, which can lead to data tampering and forgery.
+
+SHA-2
+SHA-2, on the other hand, generates hash values ​​of 224, 256, 384, and 512 bits, which makes it more secure than SHA-1. It is commonly used for digital signatures, data integrity checks, and password storage. 
+SHA-2 uses the Merkle-Damgard construction, which means it divides the input message into blocks, and each block is processed separately. This makes SHA-2 more resistant to collision attacks.
+
+SHA-3
+SHA-3 is the latest addition to the SHA family and is designed to be more secure than SHA-2. It generates hash values ​​of 224, 256, 384, and 512 bits and is commonly used for digital signatures, 
+data integrity checks, and password storage. SHA-3 uses sponge construction, which means it absorbs the input message and then extracts the hash value.
+This construction provides a high level of resistance to collision attacks and is more efficient than the Merkle-Damgard construction used in SHA-2.
 
 
+Message Digest 5 (MD5)
+MD5 is a widely used hashing algorithm that was first introduced in 1991. It generates a 128-bit hash value, which makes it faster and more efficient than some other hashing algorithms. 
+MD5 is commonly used for password storage and data integrity checks.
 
+Although MD5 works similarly to SHA-1, it is no longer recommended for use in cryptographic applications due to its small output size and vulnerability to collision attacks.
+
+RIPEMD (RACE Integrity Primitives Evaluation Message Digest)
+RIPEMD is a family of cryptographic hash functions that includes RIPEMD-128, RIPEMD-160, RIPEMD-256, and RIPEMD-320. RIPEMD-128 generates a 128-bit hash value, while RIPEMD-160, RIPEMD-256, 
+and RIPEMD-320 generate 160-, 256-, and 320-bit hash values, respectively. RIPEMD is commonly used for data integrity checks and digital signatures.
+
+BLAKE2
+BLAKE2 is a cryptographic hash function based on the BLAKE algorithm. It supports 256-bit and 512-bit hash values ​​and is designed for performance on modern CPUs. 
+BLAKE2 is commonly used in secure communication protocols, data integrity checks, and password storage.
+
+Tiger
+Tiger is a cryptographic hash function that generates a 192-bit hash value. It is commonly used in digital signatures, data integrity checks, and password storage.
+
+
+https://learn.microsoft.com/en-us/dotnet/standard/security/cryptographic-signatures
 
 
 
