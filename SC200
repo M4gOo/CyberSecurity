@@ -1177,6 +1177,150 @@ https://www.statista.com/statistics/494947/ransomware-attempts-per-year-worldwid
 https://www.statista.com/statistics/700965/leading-cause-of-ransomware-infection/
 
 
+Typosquatting
+Another threat vector is typosquatting or URL hijacking. Attackers use typosquatting to create malicious websites with domain names similar to popular, trusted websites, 
+hoping that victims will mistype the URL and visit the malicious website. For example, using CompanyName.cm instead of CompanyCame.com. Victims then enter login credentials or 
+personal data into the malicious website, allowing attackers to steal this information.
+
+You can protect yourself against typosquatting by:
+be cautious when typing URLs,
+using bookmarks for frequently visited sites and
+keeping a close eye on domain names with slight spelling errors.
+
+SQL Injection
+Many databases use the SQL language to quickly process data stored in the database. However, another threat vector, called SQL injections, can exploit vulnerabilities in web applications that use SQL databases.
+
+Attackers inject malicious SQL code into forms or URLs to manipulate the database, gain access to sensitive data, or execute commands. This is a serious risk and can give attackers full access to the database. 
+Programmers must always properly sanitize and validate user input when developing software and web applications to prevent SQL injection attacks.
+
+
+
+you should also avoid having any private information or passwords on websites or in plain sight, such as in a file on your computer or written down. Instead, use a secure password manager to store your sensitive information, 
+and always double-check the website's URL and security certificate before entering your credit card details.
+
+One of the best mitigation strategies you can implement is to install a reliable antivirus and firewall. 
+
+keep yourself up-to-date on the latest cybersecurity threats, and best practices to protect your digital life.
+
+
+Types of Biometric Security Systems
+Eye scanning involves two main types:
+
+Firstly, the iris scan, which captures the pattern of the colored ring around the pupil. Iris scanning is non-intrusive, highly accurate, and provides fast authentication,
+but can be sensitive to lighting conditions and certain eye conditions or glasses.
+
+Next comes the retinal scan, which captures the pattern of the blood vessels at the back of the eye. Retinal scanning is extremely accurate, but it can be intrusive, slower and more expensive to implement.
+
+Fingerprint recognition
+
+Facial recognition
+
+Other methods
+Other biometric security methods include voice recognition, palm print scanning, and behavioral biometrics such as keystroke dynamics, among others.
+
+Disadvantages of biometric systems
+However, despite their benefits, biometric systems have some disadvantages, including
+
+Privacy Concerns: The collection, storage and processing of biometric data raises privacy concerns as this information can be used for unauthorized purposes if not properly protected.
+
+False positives and negatives: Biometric systems can accidentally generate false positives (grant access to the wrong person) or false negatives 
+(deny access to the correct person), especially if the system is not well maintained or calibrated or if there are hardware problems.
+
+Implementation costs: Implementing biometric security systems can be expensive, especially with more advanced technologies such as retinal scanning.
+
+
+password managers have become a very useful tool for generating and saving complex and unique passwords for all your logins. 
+Password managers encrypt and store your passwords and login information in one place. Some of them can even automatically log you into websites and apps, so you never have to manually enter your credentials again. 
+There are several password manager applications you can use, including LastPass, 1Password, and Bitwarden. Most of these password managers even support a secondary authentication layer, like one-time pin or OTP,
+which adds additional protection. While password managers are useful and create very secure passwords, it's also beneficial that you understand how to create a secure password yourself. 
+
+
+Do not include your name, a family member's name, or a pet's name. They are too easy to guess. It should not include phone numbers, birthdays addresses, or social security numbers.
+Cybersecurity experts recommend creating a new password every three months. 
+
+two-factor authentication can protect your online accounts by adding an extra security layer. There are several applications that offer two-factor authentication, 
+including Microsoft authenticator, Google authenticator, and Authy. They generate time based one-time passwords or OTP for multi-factor authentication. 
+On top of all these options, you also have personal encryption tools like GPG or GNU Privacy Guard, and Pretty Good Privacy or as it's known, PGP.
+These help protect sensitive information by encrypting files and messages, ensuring only authorized recipients can access them. These tools use public key cryptography to enable secure communication and file sharing. 
+Applications like Microsoft Bitlocker and macOS File Vault provide full disk encryption, scrambling your entire hard drive and all its contents.
+
+How do antivirus programs detect malware?
+Signature-based detection
+The first is signature-based detection, which is the most traditional method of identifying malware. 
+This technique relies on the antivirus program's virus database, which contains unique signatures or patterns of known malware. Antivirus software scans files and compares them to database signatures. 
+If a match is found, the file is flagged as malicious.
+
+However, signature-based detection has its limitations. It can only identify known malware and is less effective against new or previously unknown threats,
+which is why it is often combined with other detection techniques.
+
+Heuristic analysis
+Next comes heuristic analysis, which involves examining a file's code, structure, or behavior to identify potential threats. 
+This technique allows antivirus programs to detect previously unknown malware or new variants of existing malware. Heuristic analysis uses algorithms to determine whether a 
+file exhibits characteristics commonly associated with malicious software.
+
+However, heuristic analysis can generate false positives because some legitimate programs share features or behavior patterns with malware. 
+However, it is a valuable tool for identifying new threats that may not yet have a signature in the virus database.
+
+Behavioral analysis
+Cybersecurity can also complete behavioral analysis by monitoring the real-time actions of software on a system to identify potential threats. 
+This method is based on the principle that malware will engage in malicious behavior, such as modifying system files, installing unauthorized software, or accessing sensitive data.
+
+If a program exhibits suspicious behavior, antivirus software will flag it as a possible threat and block its actions or quarantine the file for further investigation. 
+This approach is useful for detecting malware that may evade heuristic or signature-based detection methods.
+
+
+How firewalls work
+
+One of the fundamental techniques used is packet filtering, which involves inspecting each data packet that passes through the firewall and determining whether to allow or block it based on predefined rules. 
+These rules typically include criteria such as IP addresses, port numbers, and protocol types.
+
+For example, a rule can be defined to block all inbound traffic from a specific IP address or to only allow HTTPS traffic through a certain port. 
+Packet filtering is a relatively simple and efficient method for controlling network traffic, but it may not be sufficient to protect against more sophisticated threats.
+
+
+Stateful inspection, also known as dynamic packet filtering or stateful firewall, adds an additional layer of security by maintaining information about the state of active connections. 
+This approach allows firewalls to examine not only individual packets, but also the context of the connection over which they are transmitted.
+
+When a connection is established, the firewall records the connection details in a state table. As packets pass through the firewall, they are compared to the state table to determine 
+whether they belong to an existing, authorized connection. This method allows firewalls to detect and block unauthorized or malicious packets that may attempt to exploit legitimate connections.
+
+Another technique used is application layer filtering, also known as deep packet inspection or proxy-based filtering. It involves examining the contents of data packets at the application layer of the OSI model. 
+This technique allows firewalls to inspect the actual data being transmitted by applications, enabling the detection and blocking of specific types of content,
+such as malware, spam, or unauthorized access to sensitive information.
+
+
+Data backup
+One of the best solutions to prevent data loss is to maintain a regular backup of your data. This not only ensures data security, but also saves you from having to put in a lot of effort to create that data again. 
+There are several types of software that help you create regular backups of your computer data and store it on physical hard drives, SSD drives, or a cloud storage solution such as 
+Microsoft OneDrive, Google Drive, Google Photos, or Dropbox.
+
+
+Some popular encryption tools for full disk encryption are Microsoft Bitlocker for Windows operating system, VeraCrypt for Linux, and FileVault for macOS. 
+You may be surprised to learn that the operating system continues to function like a normal machine, even when the disk is encrypted with these tools. 
+While there may be a small reduction in performance due to the encryption and decryption processes, modern hardware and encryption algorithms have minimized this performance impact, making it negligible for most users.
+
+It is critical to be aware that malware programs can still access files on an already encrypted disk if they gain access to the system while it is unlocked and running.
+
+
+Preventing data theft from your device
+
+Back up your data: Before selling or disposing of a device, make sure you have a complete backup of your personal data.
+
+Log out of account: Log out of services like iTunes or Google and any other personal accounts, including email, social media, and cloud storage services.
+
+Factory reset your device: Perform a factory reset on your computer or phone to remove all your personal data and restore your device to its original settings. In the case of computers, 
+this may involve reinstalling the operating system.
+
+Securely Erase Hard Drive: Always use a secure erase tool to overwrite your hard drive or SSD multiple times, ensuring that it cannot be recovered easily. Some operating systems 
+have built-in tools for this purpose, such as "Secure Delete" on macOS. On Windows, you may need to use command-line tools or third-party software.
+
+Physically destroy storage: If you are disposing of a hard drive, SSD, CD, or USB drive and want to ensure data security, consider physically destroying the drive.
+
+
+
+
+
+
 
 
 
