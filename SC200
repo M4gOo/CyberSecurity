@@ -2127,9 +2127,48 @@ https://www.microsoft.com/en-gb/industry/blog/government/2020/06/26/how-to-have-
 https://www.n-able.com/blog/the-top-7-risks-of-bring-your-own-device-msps-should-remember
 
 
+----------- security compliance
+
+ using risk management strategies to spot and treat risks before they cause major damage. 
+And maintain compliance to reduce the chance of operational disruptions, financial penalties, and damage to the business's reputation
+
+Security compliance refers to the process of adhering to a set of specific laws, regulations, and guidelines designed to protect data and information systems.
+It's a comprehensive approach that encompasses safeguarding data, controlling who has access to it, and managing how it's shared and stored. 
+It's a way of ensuring that data isn't just stored, but stored responsibly and securely. 
+
+Compliance, on the other hand, is about adhering strictly to a specific set of rules. These could be laws and regulations, standards or guidelines pertinent to your business. 
+For example, in Sam's case, risk management involves identifying and reducing risks associated with customer data, financial records, and employee information. 
+While compliance means following laws, standards, and regulations on data privacy and financial reporting. 
+
+ how risk management takes form. Risk management generally involves four phases, identification, assessment, response, and monitoring and reporting. 
+The process begins with identifying potential risks in all key areas using information from various sources such as interviews, vulnerability scans, and incident reports. 
+Then, in the assessment phase, each risk is evaluated based on impact, likelihood, and control deficiency. Impact refers to potential damage to the company. 
+Likelihood measures the probability of the risk occurring, and control deficiency assesses the effectiveness of implemented mitigation strategies. 
+The combination of these metrics provides a risk score, which is presented to key stakeholders for verification.
 
 
+-----------  your permission to use cookies when you visit a website
 
+they are a direct result of the GDPR, a regulation that's all about protecting your online privacy.
+GDPR keeps your privacy intact while still letting you enjoy the wonders of the Internet.
+
+Browser cookies or a HTTP cookies are small, bite-sized pieces of data that websites store on your computer. Their main function is to remember you and your preferences for a specific website. 
+They are the reason you don't have to log in every time you visit your favorite site. Why you don't lose items in your online shopping cart, even if you accidentally close the browser. 
+Plus these cookies can even help show you ads that match your browsing habits.
+
+The GDPR has completely transformed privacy laws and put the power back into the hands of the individuals like you. 
+But how does it relate to those seemingly innocent browser cookies you encounter on a daily basis? 
+Simply put, the GDPR recognizes cookies as personal data if they have the potential to identify you either directly or indirectly. 
+This means that companies have a responsibility to obtain explicit and informed consent before they store access these cookies. 
+The GDPR requires companies to be upfront about why they're collecting your data, how it will be used, and whether it will be shared with third parties. It's all about transparency and the law that mandates it.
+the site uses cookies and provides options for you to accept, reject, or customize the level of cookies you're comfortable with. It's no longer about merely informing you that cookies are being used.
+
+PCI-DSS (Payment Card Industry Data Security Standard) is a set of security standards created to ensure that all companies that accept, process, store or transmit credit card information maintain a secure environment.
+
+https://learn.microsoft.com/en-us/training/modules/describe-security-concepts-methodologies/6-describe-compliance-concepts?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.describe-concepts-of-security-compliance-identity
+https://learn.microsoft.com/en-us/training/paths/describe-concepts-of-security-compliance-identity/
+https://learn.microsoft.com/en-us/microsoft-365/lti/browser-cookies?view=o365-worldwide&tabs=edge
+https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-web-browser-cookies
 
 
 
