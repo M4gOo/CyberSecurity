@@ -2171,6 +2171,21 @@ https://learn.microsoft.com/en-us/microsoft-365/lti/browser-cookies?view=o365-wo
 https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-web-browser-cookies
 
 
+-------------- manage identity
 
+By implementing best practices such as Active Directory for authentication, rigorous access control for authorization, and identity federation for cross domain access. 
+You and your organization can build a resilient defense against potential cyber threats.
 
+let's say Ashley needs to access data from Sam scoop server. In this case, Ashley's identity is represented by a username and password, while the server's identity is represented by an IP address. 
+This is where identity management comes into accurately defined verifying govern these identities, to ensure secure interactions between them. 
+Identity management isn't merely about knowing who or what the entities are. It's also about ensuring the appropriate entities have the right level of access to the right resources at the right time.
+But it doesn't stop there. Identity management encompasses the entire life cycle of digital identities within a system. It starts with creating an identity when a new user or a system components is added to the network. 
+Then this involves maintaining and updating the identity. Adjusting access rights as required, or revoking them when they're no longer needed. Now what about the tools that facilitate this process? 
+Active Directory is a Microsoft service that is a pivotal component in identity management. 
+
+It serves as a virtual directory for your network, organizing and controlling data access and managing user interactions throughout the system.
+Think of it like a digital phone book for your network. Storing directory data in a structured way and offering services to manage resources effectively.
+
+using your Google Account to sign up for an online streaming service. This is federated identity at work. It enables you to log in at one location and seamlessly switch to another without the need to login again. 
+Identity federation signifies a set of agreements, protocols, and technologies enabling you to use a single digital identity to access resources across multiple security domains from different enterprises.
 
