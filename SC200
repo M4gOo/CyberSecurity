@@ -1813,6 +1813,169 @@ https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate?ta
 https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/iis/www-administration-management/enable-ssl-all-customers
 
 
+============== authorization and authentication   https://learn.microsoft.com/en-us/entra/identity-platform/authentication-vs-authorization
+
+ The challenge of efficiently managing network access for a variety of users is a struggle for organizations of all sizes. 
+Centralized authentication and authorization systems are integral to this task. Across multiple machines, servers, mobile users, and data centers, they provide an efficient solution for managing network access. 
+Such a system consolidates access control, simplifies management, and enhances control. By having a single point of authentication,
+organizations can enforce consistent access policies across various networks and services. This reduces the administrative workload associated with managing numerous access protocols 
+and bolsters security by minimizing the potential for access violations and inconsistencies. 
+Moreover, centralized authentication and authorization systems facilitate single sign on or SSO capabilities, a feature that significantly improves the user experience. 
+
+This is not just for convenience, it also improves security. By reducing the number of times users must enter their credentials, the likelihood of phishing attacks, password theft, and other security breaches decreases.
+
+Kerberos Distribution Center (KDC)
+The Kerberos Distribution Center (KDC) is a common authentication system employed in computer networks. It operates based on the Kerberos protocol, which is widely used to authenticate users and provide secure access to network resources.
+
+KDC components and steps
+Kerberos is a network authentication protocol that uses secret-key cryptography to authenticate client-server applications.
+
+See the steps involved below:
+
+Authentication Service (AS) Exchange: The client requests an initial ticket from the Authentication Server (AS) component of the KDC. 
+This request contains the customer ID and the ID of the service for which they want a ticket, usually a TGS (Ticket-Granting Service). 
+At this point, the customer doesn't have any tickets, so this request is in plain text or sent with a previously shared secret key.
+
+The customer receives the ticket grant ticket (TGT): The AS verifies the customer's credentials (in a typical configuration this might be checking a password).
+If the customer is known and has access to grant, the AS creates a Ticket Grant Ticket (TGT). This TGT contains the customer ID, ticket validity period, and customer/TGS session key.
+This TGT is encrypted using the TGS secret key. The AS also sends a copy of the client/TGS session key to the client, encrypted with the client's secret key.
+The client describes the session key and keeps it for future communication.
+
+Ticket Granting Service (TGS) Switch: When the client needs to communicate with another service, it sends a request to the Ticket Granting Service (TGS), including the TGT (which is still encrypted with the 
+TGS secret key) , the ID of the service you want to access, and an authenticator, which contains the client ID and a timestamp, encrypted using the client/TGS session key.
+
+The client receives the service ticket: The TGS decrypts the TGT and authenticator, verifies the information and, if everything is correct, creates a service ticket. This ticket contains the client ID, 
+validity period, and a client/service session key encrypted using the service secret key. The TGS sends this service ticket to the client, along with a copy of the client/service session key encrypted with 
+the client/TGS session key.
+
+Client-server authentication: The client now has the service ticket and the client/service session key. To access the service, the client sends the service ticket (still encrypted with the service secret key) 
+and a new authenticator (encrypted with the client/service session key) to the service. The service decrypts the ticket, extracts the session key from the client/service, and uses this key to decrypt the authenticator.
+If all the information matches, the service sends back the confirmation and the client is authenticated to use the service.
+
+A centralized authentication and authorization system can enhance security, improve efficiency, ensure consistency, and allow for better scalability.
+
+Main authentication and authorization protocols
+Several protocols play important roles in authentication and authorization. They set the standards for data exchange and help maintain the integrity and confidentiality of data during transmission.
+
+RADIUS
+To authenticate dial-in users and grant them access to the required system or service, remote access servers can communicate with a central server using the 
+client-server protocol and software known as Remote Authentication Dial-In User Service (RADIUS).
+
+RADIUS allows a company to keep track of user profiles in a shared database that all distant servers can access. Better security is provided by a central database, 
+allowing an enterprise to create a policy that can be applied across a single managed network point.
+
+SAML (Security Assertion Markup Language)
+SAML (Security Assertion Markup Language) is a standard for exchanging authentication and authorization data between parties. SAML is often used to implement Single Sign-On (SSO). 
+It is mainly used in scenarios to allow users to log in once and gain access to multiple systems, applications or services without having to log in again.
+
+OAuth (Open Authorization)
+OAuth (Open Authorization) is an open standard for token-based authentication and authorization on the Internet. It allows third-party services to exchange your information without the user having 
+to provide their password.
+It is commonly used as a way for Internet users to give websites or applications access to their information on other websites, but without providing passwords.
+
+In the context of OAuth, a resource owner refers to an entity that can grant access to a protected resource. Typically, the resource owner is the end user. For example, 
+if a third-party application wants to access a user's data stored on a service like Google or Facebook, the user (the resource owner) must grant the third-party application permission to access that data.
+
+OpenID Connect
+This is a thin identity layer built on top of the OAuth 2.0 protocol. It allows clients to verify the identity of the end user based on authentication performed by an authorization server 
+and obtain basic profile information about the end use
+
+
+Choosing the right authentication and authorization system
+Choosing the right system mainly depends on your specific requirements. If you need more authorization, OAuth may be the best option. If the issue is authentication, 
+OpenID Connect may be a better fit. For single sign-on scenarios, SAML may be the most suitable protocol.
+
+
+https://learn.microsoft.com/en-us/azure/app-service/overview-authentication-authorization
+
+
+
+--------Transmission threats. 
+
+some of these techniques including eavesdropping, sniffing, and MiTM.
+
+
+One possible way is by the attacker firstly, compromising the connection. This includes connections like public Wi-Fi or Ethernet networks, or the attacker accessing something physical like a switch or router, 
+then the attacker pretends to be an access point for the Wi-Fi or router or an Ethernet switch. 
+This establishes the connection making you believe that you are communicating with the other party directly. 
+
+MiTM attacks can be avoided by employing strong encryption techniques and digital certificates to sign conversations. 
+Furthermore, if you need to access critical services, you should avoid connecting to public untrusted networks.
+
+
+Another technique attackers use is something called SSL stripping. This technique downgrades a secure HTTPS connection to the less secure HTTP connection. 
+This method effectively bypasses the encryption provided by SSL and TLS, thus allowing the attacker to intercept and read your sensitive data that has been transmitted.
+The victim attempts to connect to a secure website using HTTPS. The attacker positioned between the victim and the server intercepts the request and establishes a HTTPS connection 
+with the targeted websites on the victim's behalf. The attacker then sends the requested content to the victim over an unencrypted HTTP connection, while maintaining the HTTPS connection with the targeted website. 
+The victim, unaware of the downgrade to HTTP, sends sensitive information to the attacker in plain text.
+The attacker can now read, modify, or steal the data before forwarding it to the intended recipient of the original HTTPS connection.
+
+A replay attack is another approach used by attackers. A replay attack involves an attacker maliciously capturing and retransmitting data. 
+Even when the data is encrypted, retransmitting the encrypted packets can enable an attacker to carry out an MiTM attack or authenticate themselves as a valid user.
+When the attacker captures an encrypted message that can retransmit it and the receiver noticing valid ciphertext decrypts it. 
+The easiest way to prevent replay attacks is to use one-time passwords or OTPs
+
+Wireshark
+The first is Wireshark, an open source tool that allows you to analyze the network on a microscopic level. 
+Commonly known as a network protocol analyzer, Wireshark allows you to interactively capture and browse traffic running on a computer network. 
+It can run on multiple platforms including Windows, MacOS and Linux.
+
+Cain & Abel
+It helps users to recover various types of passwords
+Detecting network traffic,
+Crack encrypted passwords,
+VoIP conversation recording and much more.
+
+Ettercap
+Next up is Ettercap, which is a comprehensive tool for man-in-the-middle attacks on a LAN (Local Area Network). 
+It can intercept traffic on a network segment, capture passwords, and perform active spying on common protocols.
+
+TCPDump
+Another tool is TCPDump, a powerful command-line packet analyzer used to view TCP/IP packets traveling across the network. It's like a security camera for your network! 
+You can observe all data entering and leaving your network and record it for later analysis. This can also be very useful for troubleshooting network issues or investigating suspicious network activity.
+
+TCPDump works by capturing data packets passing through a network. It then decodes and prints the packets into a readable format. This allows you to see exactly what data is being sent and received on your network. 
+It includes a wide range of options that allow you to filter and view packet data in a variety of ways. 
+For example, you can filter packets based on IP address, protocol type, packet size, and many other factors, making it a highly flexible tool for network analysis and troubleshooting.
+
+Other data transmission interception tools
+
+TCPflow is a command-line utility that captures data transmitted as part of TCP connections and stores the data conveniently for protocol analysis and debugging.
+
+Snort is an open source intrusion prevention system capable of analyzing real-time traffic and logging packets. It is known for its flexibility and protocol analysis capabilities.
+
+Suricata is another open-source network threat detection engine capable of detecting intrusions in real-time, monitoring network security, and capturing offline packets.
+
+Dsniff is a set of tools used for network auditing and penetration testing. Dsniff can capture passwords, protocol information, and more across a network.
+
+Tshark is a network protocol analyzer that allows you to capture packet data from an active network or read packets from a previously saved capture file. It is the terminal-based version of Wireshark.
+
+
+------ VPN
+
+ how do VPNs work? Well, a VPN starts by creating a secure encrypted connection between your device and a remote server operated by the VPN service.
+This secure connection is often referred to as a VPN tunnel, all internet traffic that passes through this tunnel is encrypted and therefore secure from interception. 
+So when you activate your VPN using VPN software, your device connects to the VPN server, this server could be located anywhere in the world. 
+Secure protocols such as OpenVPN, L2TP or IPSec, SSTP, and lastly, IKEv2 are used to create the connection.
+Your VPN provider chooses a protocol based on your specific needs, including your device compatibility speed and level of security. 
+Then, once your connection is established, the VPN encrypts your data, as you know, encryption is the process of converting data into a code to prevent unauthorized access. 
+VPNs have strong encryption protocols like AES-256 to encrypt the data before it leaves your device, making your data unreadable to anyone who might want to intercept it. 
+After encryption, the data is transmitted through the VPN tunnel to the VPN server, so even if a hacker intercepts your data, since it's encrypted, they won't be able to decrypt it due to the encryption.
+
+This not only keeps your data secure, but also helps protect your online identity and allows you to bypass geographic restrictions on content. 
+
+what method does your device use to connect to the VPN server? These methods are known as the VPN protocol, let's explore them now. 
+First is OpenVPN protocol, which is highly secure and versatile, it's compatible with various encryption algorithms and is widely regarded as the industry standard. 
+Next is the L2TP or IPSec, which is actually two protocols used together, L2TP or layer to tunnel protocol creates the tunnel and IPSec, or internet protocol security handles the encryption. 
+L2TP is considered secure but slower than OpenVPN due to its double encapsulation, you also have a point-to-point tunneling protocol, or PPTP, which is one of the oldest protocols. 
+While it's fast and easy to set up, it's not a secure option as hackers can manipulate it quite easily. 
+Lastly, internet key exchange version 2or IKEv2, is a fast and secure protocol that is excellent at re-establishing your connection if it gets interrupted. 
+
+how do you choose the right VPN for you?
+
+ firstly, consider the security protocols that the VPN software supports. Next, find out if they keep a log of your browsing data, explore how many server locations they offer.
+You should also make yourself aware of what bandwidth comes with the software, is the VPN software compatible with your device's operating system? 
+And lastly, before buying a VPN subscription, find out how many devices you can connect to a single account
 
 
 
