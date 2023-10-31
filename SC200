@@ -2286,16 +2286,58 @@ The effectiveness of security monitoring largely depends on the tools used. Tool
 and log management solutions form the crux of any effective monitoring strategy.
 
 
+---------- Azure AD -> Entra ID   https://learn.microsoft.com/en-us/entra/fundamentals/whatis
+
+Microsoft is renaming Azure Active Directory to Microsoft Entra ID.
+ Active Directory is a service tasked with managing all of the resources on a network. 
+
+establishing a connection between the on-premises AD and Azure Active Directory. This can be done using Azure AD Connect, which synchronizes user accounts and passwords from an on-premises AD to Azure AD.
+Azure AD Connect works by installing software on the on-premises AD server.
+migrate the user accounts and groups from AD to AAD. Azure AD Connect tool. This tool allows administrators to select the users and groups that need to be migrated and transfer them to the AAD. And ensures 
+that all the necessary attributes and properties are transferred correctly.
+migrating users and groups is the Active Directory Migration Tool, ADMT. ADMT allows you to extract passwords, group memberships, and other attributes associated with users and groups, and duplicate them in the cloud. 
+migrating any applications and services that are dependent on AD to AAD. This involves reconfiguring the applications and services to use AAD for authentication and authorization instead of AD.
+
+Azure Active Directory or AAD, is a modern way of managing network resources and users.
+It is much easier to incorporate a third-party SaaS into business operations
+
+Companies that decide to keep both the AD while using the AAD as the primary source maintain a secure backup which acts as a fail-safe in the event of an unforeseen incident causing data loss. 
+
+Before transitioning to AAD it is important to practice user account management by cleaning up existing accounts. 
+An account cleanup includes removing inactive users, removing duplicates, and validating contact information, and reviewing account information. 
+
+AAD Connect provides the additional functionality of password and device write-back. This means that any changes made to the AAD will be mirrored in the AD, 
+ensuring efficacy in cases where it must act as a fail-safe solution
+
+Another question that might come up for an organization is how to implement a virtual network or VN to communicate between the AD and the AAD. 
+Here, the VN connects the AAD and the AD using a VPN gateway. This allows the organization to communicate between the two networks without compromising security. 
+The VN can be configured with security groups and network specifications to appropriately control the flow of traffic between these resources. 
+
+https://learn.microsoft.com/en-us/entra/identity/domain-services/tutorial-create-instance
+https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/whatis-azure-ad-connect
+https://learn.microsoft.com/en-us/entra/fundamentals/how-subscriptions-associated-directory
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
+https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-billing-cloud-solution-provider
 
 
+B2B direct connect supports direct connection between businesses. This enables external users to access your resources within their home instances and the organization to access theirs. 
+B2B direct connect users aren't represented in your directory, but are visible from within and can be monitored. 
+
+B2C allows the creation of an identity on the site separate from any existing social media account. However, access gain this way only enables interaction with a given application or service created. 
 
 
+SAML
+This is an XML-based protocol for communicating with identity providers.
 
+OAuth is a technical standard for authorizing users. It is a protocol for passing authorization from one service to another without sharing the user's actual credentials such as username and password. 
+With OAuth, a user can sign in to one platform and then be authorized to perform actions and view data on another platform.
 
-
-
-
-
-
+https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview
+https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview
+https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-identity-provider#select-an-identity-provider
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview  
+https://techcommunity.microsoft.com/t5/itops-talk-blog/what-s-the-difference-between-azure-roles-and-azure-ad-roles/ba-p/2363647
+https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0
+https://learn.microsoft.com/en-us/entra/identity-platform/app-objects-and-service-principals?tabs=browser
 
 
