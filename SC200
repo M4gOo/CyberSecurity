@@ -2189,3 +2189,113 @@ Think of it like a digital phone book for your network. Storing directory data i
 using your Google Account to sign up for an online streaming service. This is federated identity at work. It enables you to log in at one location and seamlessly switch to another without the need to login again. 
 Identity federation signifies a set of agreements, protocols, and technologies enabling you to use a single digital identity to access resources across multiple security domains from different enterprises.
 
+
+--------- Active Directory (AD) and access control
+https://learn.microsoft.com/en-us/training/modules/introduction-to-ad-ds/2-define-ad-ds
+https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/what-is-single-sign-on
+
+AD is a directory service developed by Microsoft for Windows domain networks. It is included with most Windows Server operating systems and provides several network services, including LDAP, 
+Kerberos-based authentication, and DNS. Additionally, AD centralizes the administration and security of an enterprise IT environment.
+
+Access control is at the core of AD's functionality, managing who can and cannot access specific resources on a network. This management is done in two parts: authentication and authorization. 
+Authentication verifies the identity of the user trying to gain access, while authorization determines what authenticated users can and cannot do.
+
+AD employs a mechanism known as access control lists (ACLs) to implement authorization. Each object in an AD (users, computers, printers, network shares, etc.) 
+has an ACL attached, which defines who has access to the object and what operations can be performed.
+
+
+Identity Federation and Active Directory Federation Services (AD FS)
+It's not uncommon for people to access resources outside of their home domain. Think about the times you used a single account, like your Microsoft account or a social media profile, to sign in to different websites.
+
+Identity federation allows your digital identity, stored in one system (the home domain), to be used by other systems (partner domains), even if those systems use different authentication methods.
+This facilitates single sign-on (SSO), allowing you to authenticate once and gain access to multiple systems.
+
+SSO is an innovative authentication scheme that allows you to log into multiple yet distinct software systems using a single set of credentials. 
+
+
+ To understand how Active Directory works, it's essential to first familiarize yourself with its key components, including domains, domain controllers, organizational units and trust relationships.
+Domains are logical containers within Active Directory that group and organize resources. Each domain has its own unique domain name and maintains a separate security boundary.
+Domain controllers are servers that run the Active Directory domain services role. They authenticate users, enforce security policies, and replicate Directory across the network. 
+Organizational units are containers within Domains that help organize and manage resources based on administrative needs. They provide a way to delegate administrative authority and apply Group Policy settings. 
+Trust relationships establish connections between domains to enable secure resource sharing and authentication across different parts of the network.
+
+In addition to configuration management, Active Directory plays a crucial role in managing user identities within an organization, providing features for creating, modifying and disabling user accounts,
+as well as managing authentication and authorization.
+
+----Group Policy.
+This integral aspect of Microsoft's Active Directory service empowers administrators with a versatile toolset for managing user and computer environments across an enterprise network. 
+As you may recall, Group Policy allows for the centralized management and control of operating systems, applications and user settings in an Active Directory environment.
+
+the combination of Group Policy settings in Active Directory empowers administrators to efficiently manage user identities, enforce security policies, and control access to network resources within an organization. 
+
+With Group Policies, administrators can:
+
+establish password rules,
+manage user permissions,
+implement software and
+control system updates.
+
+
+
+------------- defense in depth   https://learn.microsoft.com/en-us/training/modules/azure-well-architected-security/2-defense-in-depth
+
+There is no one-size-fits-all solution to the myriad security threats organizations and individuals face. Instead of multifaceted layered approach is needed to boost the defense against various attack vectors. 
+
+Defense in depth is a strategy that employs a series of protective mechanisms to slow the advance of an attack aimed at acquiring unauthorized access to information. 
+Each layer adds a protective barrier, ensuring that subsequent layers are ready to mitigate the impact and prevent further intrusion even if one is breached.
+Microsoft employs this layered security approach in its physical datacenters and Azure services.
+The primary objective is to protect information and prevent unauthorized access. The confidentiality, integrity, and availability principles, often called the CIA triad
+
+
+confidentiality is about ensuring the access to information is restricted to authorized individuals. This principle is upheld by protecting user passwords, encrypting sensitive data, and securing email content. 
+Integrity involves preventing unauthorized information changes, whether at rest or in transit. Techniques like one-way hashing algorithms safeguard data integrity, which generates 
+a unique fingerprint of the data ensuring it hasn't been tampered with during transmission. 
+Availability, the third pillar of the CIA triad ensures that services and resources are accessible to authorized users whenever needed. 
+Mechanisms such as redundancy, failover protocol, and geographical dispersal of resources are employed to maintain continuous service availability and minimize single points of failure.
+
+The first layer focuses on protecting data, which is often the primary target for attackers.
+The second layer focuses on securing applications as they serve as crucial gateways to data.
+The third layer is compute. This layer focuses on the security of virtual machines and endpoint devices.
+the network layer that focuses on controlling and limiting communication to prevent unauthorized access and lateral movements within the network. 
+the perimeter. This layer is about shielding your network from large-scale attacks from the outside. Implementing distributed denial-of-service protection and perimeter firewall is can help identify, mitigate, and raise alerts for potential attacks.
+the physical security brings the defense model full circle. This stage involves preventing unauthorized physical access to assets, which can bypass other security layers if not appropriately safeguarded. 
+
+
+------------- Zero Trust model  - the saying, never trust, always verify.    https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview
+
+A new approach to data security that goes beyond products and services built on the principles of verify explicitly, use least privilege access and assume breach.
+
+The first-principle verify explicitly emphasizes the importance of continuous authentication and authorization. Based on all available data points. 
+It is not good enough to know who is trying to access your network. You also need to know their device, their location, and more. 
+The second principle of least privilege access means limiting user access with in time and enough access policies. 
+These policies restrict access to what's needed for a specific task, reducing the potential impact of a breach. 
+The final principle, assume breach involves taking a defensive stance by minimizing the area of impact, segmenting access, verifying end-to-end encryption,
+and using analytics to drive threat detection and improved defenses. 
+
+the six critical elements that must be secured to ensure a robust zero-trust model. 
+Identities, devices, applications, data, infrastructure, and networks.
+
+
+The importance of monitoring in security operations
+One of the main elements that highlight the importance of monitoring is its proactive function. Instead of reacting to threats after the incident, security monitoring empowers SOCs to anticipate and 
+neutralize threats in advance. 
+It enables the identification of subtle indicators of compromise that could initiate an attack through continuous surveillance of network activities and system behaviors.
+
+Security Monitoring Tools
+The effectiveness of security monitoring largely depends on the tools used. Tools such as IDS (Intrusion Detection Systems), SIEM (Security Information and Event Management),
+and log management solutions form the crux of any effective monitoring strategy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
